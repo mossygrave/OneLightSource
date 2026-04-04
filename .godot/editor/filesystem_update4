@@ -1,1 +1,6 @@
 res://scenes/lantern.tscn
+res://scenes/player.tscn
+res://scripts/player.gd
+res://scenes/test_level.tscn
+res://scenes/pause_menu.tscn
+res://scripts/pause_menu.gd

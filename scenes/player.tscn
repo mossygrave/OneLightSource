@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://drpnw8p4g7mve"]
+
+[ext_resource type="Script" uid="uid://bc3d30ugd1x1a" path="res://scripts/player.gd" id="1_3vyb7"]
+[ext_resource type="PackedScene" uid="uid://bij6rq0ssbq7a" path="res://scenes/lantern.tscn" id="2_g2els"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_tuyoq"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fjrip"]
+height = 2.3
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_fjrip"]
+
+[node name="Player" type="CharacterBody3D" unique_id=719765561]
+script = ExtResource("1_3vyb7")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=321375512]
+visible = false
+mesh = SubResource("CapsuleMesh_tuyoq")
+
+[node name="Body" type="CollisionShape3D" parent="." unique_id=1147406381]
+shape = SubResource("CapsuleShape3D_fjrip")
+
+[node name="CameraCollision" type="CollisionShape3D" parent="." unique_id=2146702799]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.76500005, -0.13500004)
+shape = SubResource("SphereShape3D_fjrip")
+
+[node name="Head" type="Node3D" parent="." unique_id=1041123231]
+
+[node name="Camera3D" type="Camera3D" parent="Head" unique_id=712623344]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
+
+[node name="DimVision" type="OmniLight3D" parent="Head" unique_id=424379384]
+visible = false
+light_color = Color(0.99607843, 0.9607843, 0.8862745, 1)
+light_energy = 0.2
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 2.7
+omni_attenuation = 2.0
+
+[node name="Lantern" parent="Head" unique_id=1506128044 instance=ExtResource("2_g2els")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.59451056, 0.21250403, -0.8269198)
+
+[node name="WalkingSound" type="AudioStreamPlayer" parent="." unique_id=455910330]
+pitch_scale = 1.15
+
+[node name="SprintingSound" type="AudioStreamPlayer" parent="." unique_id=266624849]
+volume_db = 5.474
+pitch_scale = 1.5
+
+[node name="FlashlightClick" type="AudioStreamPlayer" parent="." unique_id=972261160]
+pitch_scale = 1.9

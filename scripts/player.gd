@@ -1,0 +1,139 @@
+extends CharacterBody3D
+
+# Movement Variables/Constants
+@onready var speed := 3.0
+const CROUCH_MOVE_SPEED := 1.5
+const WALKING_SPEED := 3.0
+const SPRINT_SPEED := 6.0
+const JUMP_VELOCITY := 4.5
+var sprinting = false
+
+# Crouch Variables/Constants
+const STANDING_HEIGHT := 0.0
+const CROUCHING_HEIGHT := -0.5
+var crouching = false
+
+# Mouse Variables
+var sensitivity := 0.1
+
+# Other
+@onready var camera = $Head/Camera3D
+var flashlight = false
+
+
+# ------------------ Ready Function ------------------
+func _ready():
+	pass
+
+# --------------------- Physics Process ---------------------
+func _physics_process(delta: float) -> void:
+	# Use Crouch/Sprint
+	#crouch()
+	sprint()
+	lantern_on_off()
+
+	# Jump (Choosing to keep it out)
+	if Input.is_action_just_pressed("jump") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+
+	# Add gravity
+	if not is_on_floor():
+		velocity += get_gravity() * delta
+
+	# Movement
+	var input_dir := Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
+	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+
+	if direction:
+		velocity.x = direction.x * speed
+		velocity.z = direction.z * speed
+	else:
+		$WalkingSound.play()
+		velocity.x = 0.0
+		velocity.z = 0.0
+
+	move_and_slide()
+
+# ------------------ Looking/Mouse ------------------
+func _input(event: InputEvent) -> void:
+	if event is InputEventMouseMotion:
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		rotate_y(deg_to_rad(-event.relative.x * sensitivity))
+		$Head.rotate_x(deg_to_rad(-event.relative.y * sensitivity))
+		$Head.rotation.x = clamp($Head.rotation.x, deg_to_rad(-80), deg_to_rad(80))
+		rotation.y = $CameraCollision.global_rotation.y
+
+# ------------------ Head Bobbing ------------------
+#func headbobbing():
+	#while speed > 0:
+		#$Head/Camera3D
+
+# ------------------ Sprint ------------------
+func sprint():
+	if Input.is_action_just_pressed("sprint") and is_on_floor():
+		$WalkingSound.stop()
+		$SprintingSound.play()
+		speed = SPRINT_SPEED
+		camera.v_offset = STANDING_HEIGHT
+		sprinting = true
+	if Input.is_action_just_released("sprint") and is_on_floor():
+		$SprintingSound.stop()
+		$WalkingSound.play()
+		speed = WALKING_SPEED
+		sprinting = false
+
+# ------------------ Crouch ------------------
+#func crouch():
+	#if Input.is_action_just_pressed("crouch(hold)"):
+		#$WalkingSound.stop()
+		#$SprintingSound.stop()
+		#speed = CROUCH_MOVE_SPEED
+		#camera.v_offset = CROUCHING_HEIGHT
+		#crouching = true
+		#sprinting = false
+		##$MeshInstance3D make smaller body
+		##y$CollisionShape3D make smaller collision
+	#if Input.is_action_just_released("crouch(hold)"):
+		#camera.v_offset = STANDING_HEIGHT
+		#if sprinting == true:
+			#$SprintingSound.play()
+			#speed = SPRINT_SPEED
+			#crouching = false
+			#sprinting = true
+		#else:
+			#$WalkingSound.play()
+			#speed = WALKING_SPEED
+			#crouching = false
+	#
+		##$MeshInstance3D restore to normal body
+		##$CollisionShape3D restore to normal collision
+	#if Input.is_action_just_pressed("crouch(toggle)"):
+		#if crouching == false:
+			#$WalkingSound.stop()
+			#$SprintingSound.stop()
+			#speed = CROUCH_MOVE_SPEED
+			#$Head/Camera3D.v_offset = CROUCHING_HEIGHT
+			#crouching = true
+		#else:
+			#camera.v_offset = STANDING_HEIGHT
+			#if sprinting == true:
+				#$SprintingSound.play()
+				#speed = SPRINT_SPEED
+				#crouching = false
+				#sprinting = true
+			#else:
+				#$WalkingSound.play()
+				#speed = WALKING_SPEED
+				#crouching = false
+
+func lantern_on_off():
+	if Input.is_action_just_pressed("lantern"):
+		$FlashlightClick.play()
+		if flashlight == false:
+			flashlight = true
+			#light_ball.emission = false
+			$Head/Lantern/LightBall.hide()
+		else:
+			flashlight = false
+			#light_ball.emission = false
+			$Head/Lantern/LightBall.show()
