@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://eeuy0pn62jbk"]
+
+[ext_resource type="Texture2D" uid="uid://doj7x6ih7j4jx" path="res://assets/Material-LIB/Cobblestone/Cobblestone-M.png" id="1_jxe34"]
+[ext_resource type="Texture2D" uid="uid://bk1hvwvttgif1" path="res://assets/Material-LIB/Nature/FoliageForest/FoliageForest-B.png" id="2_jn645"]
+[ext_resource type="PackedScene" uid="uid://sw020hte0rs6" path="res://assets/Stylized Nature MegaKit[Standard]/glTF/Rock_Medium_1.gltf" id="3_qvc4m"]
+[ext_resource type="PackedScene" uid="uid://dnlj4dq7x1uc1" path="res://assets/Stylized Nature MegaKit[Standard]/glTF/Rock_Medium_2.gltf" id="4_7dqbv"]
+[ext_resource type="PackedScene" uid="uid://dq6l2cq2hi1so" path="res://assets/Stylized Nature MegaKit[Standard]/glTF/Rock_Medium_3.gltf" id="5_ybpoa"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qtoah"]
+albedo_texture = ExtResource("1_jxe34")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eom3m"]
+albedo_texture = ExtResource("2_jn645")
+
+[node name="Node3D" type="Node3D" unique_id=33222775]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=554466490]
+transform = Transform3D(113.34459, 0, 0, 0, 25.768518, 0, 0, 0, 4.0396132, 0, 16.330914, -42.08928)
+size = Vector3(1, 1.3027344, 1)
+material = SubResource("StandardMaterial3D_qtoah")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="." unique_id=1671804389]
+transform = Transform3D(113.34459, 0, 0, 0, 25.768518, 0, 0, 0, 4.0396132, 0, 16.330914, 42.366016)
+size = Vector3(1, 1.3027344, 1)
+material = SubResource("StandardMaterial3D_qtoah")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="." unique_id=1556730034]
+transform = Transform3D(113.34459, 0, 0, 0, 25.768518, 0, 0, 0, 4.0396132, 54.486214, 16.330914, 2.4830399)
+size = Vector3(0.017028809, 1.3027344, 21.500305)
+material = SubResource("StandardMaterial3D_qtoah")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="." unique_id=746414733]
+transform = Transform3D(113.34459, 0, 0, 0, 25.768518, 0, 0, 0, 4.0396132, -54.118866, 16.330914, 2.4830399)
+size = Vector3(0.017028809, 1.3027344, 21.500305)
+material = SubResource("StandardMaterial3D_qtoah")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1977459642]
+transform = Transform3D(36.697735, 0, 0, 0, 0.13563895, 0, 0, 0, 32.45408, 0, 31.164, 0)
+size = Vector3(2.9620361, 1, 2.6984863)
+material = SubResource("StandardMaterial3D_qtoah")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=724844102]
+transform = Transform3D(36.697735, 0, 0, 0, 0.13563895, 0, 0, 0, 32.45408, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_eom3m")
+size = Vector3(2.9620361, 1, 2.6984863)
+material = SubResource("StandardMaterial3D_qtoah")
+
+[node name="Entrance" type="Node" parent="." unique_id=130127019]
+
+[node name="Rock_Medium_12" parent="Entrance" unique_id=1892337 instance=ExtResource("3_qvc4m")]
+transform = Transform3D(24.599756, 0, 0, 0, -0.58632535, -2.294164e-06, 0, 5.125819e-08, -26.242176, -2.8957906, 30.94977, 1.1206493)
+
+[node name="Rock_Medium_13" parent="Entrance" unique_id=445856417 instance=ExtResource("3_qvc4m")]
+transform = Transform3D(1.3640609, 0, 0, 0, 1.4436954, 0, 0, 0, 1.4048226, -51.347645, 0, 3.0730686)
+
+[node name="Rock_Medium_14" parent="Entrance" unique_id=1921882371 instance=ExtResource("3_qvc4m")]
+transform = Transform3D(1.3640609, 0, 0, 0, 1.4436954, 0, 0, 0, 1.4048226, -51.347645, 0, 12.420742)
+
+[node name="Rock_Medium_22" parent="Entrance" unique_id=914814685 instance=ExtResource("4_7dqbv")]
+transform = Transform3D(1.3334332, 0, 0, 0, -0.56002015, 0.7687966, 0, -1.4331987, -0.30040616, -52.413097, 5.624314, 14.112816)
+
+[node name="Rock_Medium_23" parent="Entrance" unique_id=207895720 instance=ExtResource("4_7dqbv")]
+transform = Transform3D(-1.4072173, 0.24592258, -0.040572066, 0.042893734, 0.91278756, 1.0487609, 0.18185641, 1.6876702, -0.5613171, -52.53362, 2.297475, 2.0475435)
+
+[node name="Rock_Medium_15" parent="Entrance" unique_id=433147010 instance=ExtResource("3_qvc4m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52.368214, 0.70881283, 1.8635261)
+
+[node name="Rock_Medium_24" parent="Entrance" unique_id=1388033365 instance=ExtResource("4_7dqbv")]
+transform = Transform3D(0.6998702, 0, 0, 0, 0.51860976, 0, 0, 0, 0.6516782, -50.975727, 0.16429448, 1.261292)
+
+[node name="Rock_Medium_32" parent="Entrance" unique_id=669573820 instance=ExtResource("5_ybpoa")]
+transform = Transform3D(0.8528108, 0, 0, 0, 0.06890882, -0.9988223, 0, 1.4185857, 0.048518512, -51.947697, 5.8283396, 2.0542288)
+
+[node name="Rock_Medium_33" parent="Entrance" unique_id=1240954577 instance=ExtResource("5_ybpoa")]
+transform = Transform3D(-0.6162758, 0.00062150584, 0.3866854, 0.4230234, 0.4719908, 0.5161355, -0.12774135, 1.5600276, -0.15631227, -52.54769, 6.576754, 2.873179)
+
+[node name="Rock_Medium_16" parent="Entrance" unique_id=726662840 instance=ExtResource("3_qvc4m")]
+transform = Transform3D(1, 0, 0, 0, -0.7272272, -0.3965632, 0, 0.24380675, -1.1828694, -51.97141, 8.973638, 5.653588)
+
+[node name="Rock_Medium_34" parent="Entrance" unique_id=758862735 instance=ExtResource("5_ybpoa")]
+transform = Transform3D(1.1054204, -0.19511904, -0.08760035, 0.029482374, -0.6521829, 1.2410119, -0.13365567, -1.7576243, -0.4507644, -51.780426, 2.656084, 15.196429)
+
+[node name="Rock_Medium_17" parent="Entrance" unique_id=1070853252 instance=ExtResource("3_qvc4m")]
+transform = Transform3D(0.99834216, 0.057454027, -0.00346441, -0.03826378, 0.70744056, 0.7057364, 0.042998265, -0.7044338, 0.7084661, -52.094223, 5.545649, 12.943648)
+
+[node name="Rock_Medium_35" parent="Entrance" unique_id=1258292851 instance=ExtResource("5_ybpoa")]
+transform = Transform3D(0.7054509, 0, 0, 0, -0.71628976, 0.6978029, 0, -0.6978029, -0.71628976, -52.066654, 8.150932, 12.614452)
+
+[node name="Rock_Medium_25" parent="Entrance" unique_id=1205911721 instance=ExtResource("4_7dqbv")]
+transform = Transform3D(0.8319834, 0, 0, 0, -1.1749847, -0.05558202, 0, 0.034421075, -1.8973267, -51.865543, 9.974233, 8.704698)
+
+[node name="Rock_Medium_26" parent="Entrance" unique_id=865296512 instance=ExtResource("4_7dqbv")]
+transform = Transform3D(1.8207653, 0.013343546, -0.0042049047, -0.016836269, 1.4430399, 4.365469e-05, 0.0076567996, -6.857195e-06, 1.0000104, -51.890423, 0, 15.421435)
+
+[node name="Rock_Medium_36" parent="Entrance" unique_id=869317338 instance=ExtResource("5_ybpoa")]
+transform = Transform3D(1, 0, 0, 0, 0.91351706, 0.40680042, 0, -0.40680042, 0.91351706, -53.24108, 3.381525, 12.845888)
