@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dmpru034idook"]
+
+[sub_resource type="Environment" id="Environment_styht"]
+glow_enabled = true
+glow_intensity = 0.95
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_styht"]
+lifetime_randomness = 0.14
+emission_shape = 1
+emission_sphere_radius = 0.5
+direction = Vector3(0, 0, 0)
+initial_velocity_min = 0.29999998
+initial_velocity_max = 0.5
+gravity = Vector3(0, 3, 0)
+scale_min = 0.01
+scale_max = 0.03
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kvce8"]
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.14509805, 0.4509804, 0.9764706, 1)
+emission_enabled = true
+emission = Color(0.32156864, 0.6, 0.99607843, 1)
+emission_energy_multiplier = 10.57
+
+[sub_resource type="SphereMesh" id="SphereMesh_imkh1"]
+material = SubResource("StandardMaterial3D_kvce8")
+
+[node name="LightParticles" type="Node3D" unique_id=357665813]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2073910821]
+environment = SubResource("Environment_styht")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=731808447]
+amount = 100
+lifetime = 0.5
+speed_scale = 0.2
+fixed_fps = 0
+process_material = SubResource("ParticleProcessMaterial_styht")
+draw_pass_1 = SubResource("SphereMesh_imkh1")

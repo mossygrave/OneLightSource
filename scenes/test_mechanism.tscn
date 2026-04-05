@@ -1,0 +1,149 @@
+[gd_scene format=3 uid="uid://b88t3cpa5njrv"]
+
+[ext_resource type="Script" uid="uid://cq8uffl0kefrf" path="res://scripts/test_mechanism.gd" id="1_l1a8b"]
+[ext_resource type="PackedScene" uid="uid://dmpru034idook" path="res://scenes/light_particles.tscn" id="2_gql57"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5rfby"]
+size = Vector3(1.4228516, 2.103302, 1.5644531)
+
+[sub_resource type="SphereMesh" id="SphereMesh_5rfby"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gql57"]
+vertex_color_use_as_albedo = true
+albedo_color = Color(0, 0.057640776, 0.45382154, 1)
+emission_enabled = true
+emission = Color(0.4392157, 0.6156863, 0.99607843, 1)
+emission_energy_multiplier = 7.86
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5rfby"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vbf3o"]
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.46034718, 0.46034718, 0.46034712, 1)
+emission_enabled = true
+emission = Color(0.4392157, 0.6156863, 0.99607843, 1)
+emission_energy_multiplier = 7.15
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5rfby"]
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.66245234, 0.66245234, 0.6624523, 1)
+stencil_flags = 2
+stencil_reference = 2
+stencil_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l1a8b"]
+vertex_color_use_as_albedo = true
+roughness = 0.0
+
+[node name="TestMechanism" type="Node3D" unique_id=652347845]
+script = ExtResource("1_l1a8b")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1554614450]
+transform = Transform3D(-1, 3.552714e-15, 8.7422784e-08, 4.58135e-08, 0.8516904, 0.5240454, -7.4457134e-08, 0.5240454, -0.8516904, 0, 2.794496, 0)
+visible = false
+light_color = Color(0.4392157, 0.6156863, 0.99607843, 1)
+light_energy = 11.139
+light_bake_mode = 1
+
+[node name="TriggerArea" type="Area3D" parent="." unique_id=816327437]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TriggerArea" unique_id=1246327820]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.83543265, 0.096132636)
+shape = SubResource("BoxShape3D_5rfby")
+
+[node name="MechanismLight" type="Node3D" parent="." unique_id=1912937964]
+
+[node name="LightSphere" type="MeshInstance3D" parent="MechanismLight" unique_id=733297837]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 1.4097031, 0.29621956)
+mesh = SubResource("SphereMesh_5rfby")
+skeleton = NodePath("../../CSGBox3D/CSGSphere3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_gql57")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="MechanismLight/LightSphere" unique_id=1374920929]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.6378419)
+light_color = Color(0.14509805, 0.4509804, 0.9764706, 1)
+light_energy = 2.109
+omni_range = 2.25
+
+[node name="LightPlane" type="MeshInstance3D" parent="MechanismLight" unique_id=393623353]
+transform = Transform3D(5.4468115e-16, 4.3711395e-08, 0.061982904, 0.78716063, -4.371139e-08, 1.2622417e-30, 3.440788e-08, 0.9999999, -2.7093585e-09, 0, 0.474136, 0.38075644)
+mesh = SubResource("PlaneMesh_5rfby")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_vbf3o")
+
+[node name="LightPlane2" type="MeshInstance3D" parent="MechanismLight" unique_id=273398872]
+transform = Transform3D(2.022098e-15, 4.371138e-08, -0.0619829, 1.0583105, -4.371138e-08, 0, -4.6260215e-08, -0.9999999, -2.7093585e-09, 3.6952257e-09, 0.749988, -0.3822841)
+mesh = SubResource("PlaneMesh_5rfby")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_vbf3o")
+
+[node name="LightPlane3" type="MeshInstance3D" parent="MechanismLight" unique_id=1250243538]
+transform = Transform3D(4.626021e-08, 0.9999999, 5.418717e-09, 1.0583105, -4.3711378e-08, 9.625574e-24, 2.8432207e-16, 8.742276e-08, -0.0619829, 0.50138515, 0.749988, 0.0039450526)
+mesh = SubResource("PlaneMesh_5rfby")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_vbf3o")
+
+[node name="LightPlane4" type="MeshInstance3D" parent="MechanismLight" unique_id=1896953959]
+transform = Transform3D(-4.6260205e-08, -0.9999999, -1.0837434e-08, 1.0583105, -4.3711374e-08, 6.475307e-23, -4.3285188e-15, -1.7484552e-07, 0.0619829, -0.508004, 0.749988, 0.0039450526)
+mesh = SubResource("PlaneMesh_5rfby")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_vbf3o")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="MechanismLight" unique_id=1335542908]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.0044113398, 1.9552205, 0.0021108687)
+light_color = Color(0.14509805, 0.4509804, 0.9764706, 1)
+light_energy = 2.109
+omni_range = 2.800261
+omni_attenuation = -0.481
+
+[node name="LightParticles" parent="MechanismLight" unique_id=357665813 instance=ExtResource("2_gql57")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4546806, 0.4)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=324475317]
+transform = Transform3D(1, 0, 0, 0, 1.71, 0, 0, 0, 0.755, 0, 0.75007606, 0)
+use_collision = true
+size = Vector3(1, 1.2437134, 1)
+material = SubResource("StandardMaterial3D_5rfby")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="CSGBox3D" unique_id=487093225]
+transform = Transform3D(0.3, 0, 0, 0, 0.1754386, 0, 0, 0, 0.397351, 0, 0.38574684, 0.40311617)
+operation = 2
+radial_segments = 25
+rings = 27
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=751276015]
+transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, -1, 0, 1, -4.371139e-08, 0, 1.4118149, 0.2538669)
+use_collision = true
+radius = 0.16015625
+height = 0.26550293
+sides = 25
+material = SubResource("StandardMaterial3D_l1a8b")
+
+[node name="CSGSphere3D2" type="CSGSphere3D" parent="CSGCylinder3D" unique_id=1589380729]
+transform = Transform3D(0.3, 0, 0, 0, -1.3113417e-08, 0.3, 0, -0.3, -1.3113416e-08, 0, 0.023503542, 0.0021117926)
+operation = 2
+radial_segments = 25
+rings = 27
+
+[node name="Prompt" type="Label" parent="." unique_id=873271126]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -316.5
+offset_top = 221.5
+offset_right = 316.5
+offset_bottom = 290.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 80
+text = "Press Left Mouse to Give Light"
+horizontal_alignment = 1
+
+[connection signal="body_entered" from="TriggerArea" to="." method="_on_trigger_area_body_entered"]
+[connection signal="body_exited" from="TriggerArea" to="." method="_on_trigger_area_body_exited"]
+[connection signal="input_event" from="TriggerArea" to="." method="_on_trigger_area_input_event"]

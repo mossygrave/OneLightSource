@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1775338957
+::res://::1775365531
 icon.svg::CompressedTexture2D::3244085221598579901::1775326546::1775326785::1::::<><><>0<>0<>d0b6d532f8cb223fa940ab57523967ef<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://assets/::1775334262
 ::res://assets/BinbunVFX_Vol2/::1775326541
@@ -225,7 +225,7 @@ SkySkybox.png::CompressedTexture2D::1118396736433858342::1775326545::1775326794:
 SunsetSky.png::CompressedTexture2D::6721562633243556777::1775326545::1775326795::1::::<><><>0<>0<>2748e3535b6d61708f2d69e6cdbe9704<>res://.godot/imported/SunsetSky.png-b0da2a7060af090f201fa6bc77ea5627.ctex::
 ::res://assets/Stylized Nature MegaKit[Standard]/::1775326546
 License_Standard.txt::TextFile::-1::1775326545::0::1::::<><><>0<>0<><>::
-::res://assets/Stylized Nature MegaKit[Standard]/glTF/::1775338935
+::res://assets/Stylized Nature MegaKit[Standard]/glTF/::1775338958
 Bark_DeadTree.png::CompressedTexture2D::4987106613877577004::1775326546::1775334327::1::::<><><>0<>0<>25e20e4f99d74707116925d50abfc393<>res://.godot/imported/Bark_DeadTree.png-2cfbf64f609e3955b8969574421a1578.s3tc.ctex::
 Bark_DeadTree_Normal.png::CompressedTexture2D::7061423290801968821::1775326546::1775334328::1::::<><><>0<>0<>1d8d968c1bac325a6f9da5665cdb4aed<>res://.godot/imported/Bark_DeadTree_Normal.png-3e9bc133a7efcb1b2c00427b1c50d18c.s3tc.ctex::
 Bark_NormalTree.png::CompressedTexture2D::2717384670801309178::1775326546::1775334328::1::::<><><>0<>0<>6b9dea19d388cf32388fe48247c1d5e9<>res://.godot/imported/Bark_NormalTree.png-44d818f16c4a39058f71f0f658a2a963.s3tc.ctex::
@@ -336,11 +336,13 @@ Mushrooms.png::CompressedTexture2D::9026874178022054892::1775326546::1775334326:
 PathRocks_Diffuse.png::CompressedTexture2D::6825572224382509140::1775326546::1775334326::1::::<><><>0<>0<>a99a7acdaa6ebd7ace079f1652e9a96d<>res://.godot/imported/PathRocks_Diffuse.png-d144b9ae0a19ccadbd4dd8400c66a857.ctex::
 Rocks_Desert_Diffuse.png::CompressedTexture2D::6745829127449237190::1775326546::1775334327::1::::<><><>0<>0<>c61fb2ba9c894ca3b96e61202717e346<>res://.godot/imported/Rocks_Desert_Diffuse.png-eea17ab0c5e9461cf33af03fd5693612.ctex::
 Rocks_Diffuse.png::CompressedTexture2D::457232826307033135::1775326546::1775334327::1::::<><><>0<>0<>0de0accfa4fade1f25c0d361f78424ee<>res://.godot/imported/Rocks_Diffuse.png-39416e10b14e47e3e3345fc0f6e90c81.ctex::
-::res://scenes/::1775338935
-lantern.tscn::PackedScene::2968424297691705000::1775338935::0::1::::<><><>0<>0<><>::
+::res://scenes/::1775360479
+lantern.tscn::PackedScene::2968424297691705000::1775348020::0::1::::<><><>0<>0<><>::
 pause_menu.tscn::PackedScene::3682652178097069289::1775338935::0::1::::<><><>0<>0<><>::res://scripts/pause_menu.gd
-player.tscn::PackedScene::8384268425378160702::1775338935::0::1::::<><><>0<>0<><>::uid://bc3d30ugd1x1a::::res://scripts/player.gd<>uid://bij6rq0ssbq7a::::res://scenes/lantern.tscn
-test_level.tscn::PackedScene::3568758052933150243::1775338935::0::1::::<><><>0<>0<><>::uid://drpnw8p4g7mve::::res://scenes/player.tscn<>uid://bsp50jj5bcdft::::res://scenes/pause_menu.tscn
-::res://scripts/::1775338935
+player.tscn::PackedScene::8384268425378160702::1775347952::0::1::::<><><>0<>0<><>::uid://bc3d30ugd1x1a::::res://scripts/player.gd<>uid://bij6rq0ssbq7a::::res://scenes/lantern.tscn
+test_level.tscn::PackedScene::3568758052933150243::1775345164::0::1::::<><><>0<>0<><>::uid://drpnw8p4g7mve::::res://scenes/player.tscn<>uid://bsp50jj5bcdft::::res://scenes/pause_menu.tscn<>uid://b88t3cpa5njrv::::res://scenes/test_mechanism.tscn
+test_mechanism.tscn::PackedScene::4771980742983420803::1775360479::0::1::::<><><>0<>0<><>::uid://cq8uffl0kefrf::::res://scripts/test_mechanism.gd
+::res://scripts/::1775360479
 pause_menu.gd::GDScript::5960934035727244648::1775338935::0::1::::<>CanvasLayer<><>0<>0<><>::
-player.gd::GDScript::2584834445547988880::1775338935::0::1::::<>CharacterBody3D<><>0<>0<><>::
+player.gd::GDScript::2584834445547988880::1775347952::0::1::::<>CharacterBody3D<><>0<>0<><>::
+test_mechanism.gd::GDScript::5965210881062558459::1775360479::0::1::::<>Node3D<><>0<>0<><>::

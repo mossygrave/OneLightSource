@@ -1,5 +1,11 @@
 [gd_scene format=3 uid="uid://bij6rq0ssbq7a"]
 
+[ext_resource type="Script" uid="uid://dlunqitvx8qw1" path="res://scripts/lantern.gd" id="1_hhuhv"]
+
+[sub_resource type="Environment" id="Environment_uxgnm"]
+glow_enabled = true
+glow_intensity = 0.79
+
 [sub_resource type="BoxMesh" id="BoxMesh_jqqsp"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_hhuhv"]
@@ -18,7 +24,7 @@ albedo_color = Color(0.8813774, 1, 0.99785274, 1)
 metallic = 0.66
 roughness = 0.0
 emission_enabled = true
-emission = Color(0.1597487, 0.3884293, 0.9824845, 1)
+emission = Color(0.44023538, 0.61654264, 0.99698406, 1)
 emission_energy_multiplier = 13.66
 
 [sub_resource type="Animation" id="Animation_jqqsp"]
@@ -228,6 +234,10 @@ _data = {
 }
 
 [node name="Lantern" type="Node3D" unique_id=1195142896]
+script = ExtResource("1_hhuhv")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1492568586]
+environment = SubResource("Environment_uxgnm")
 
 [node name="TopBase" type="MeshInstance3D" parent="." unique_id=2069556998]
 transform = Transform3D(1, 0, 0, 0, 0.15, 0, 0, 0, 1, 0, 0.9, 0)
@@ -265,6 +275,13 @@ transform = Transform3D(0.09999999, 0, 0, 0, 0.64799994, 0, 0, 0, 0.09999999, -0
 mesh = SubResource("BoxMesh_uxgnm")
 surface_material_override/0 = SubResource("StandardMaterial3D_jdg25")
 
+[node name="OffLight" type="OmniLight3D" parent="." unique_id=345834262]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1303676, 0.36325973, 0.91907907)
+visible = false
+light_color = Color(0.3529412, 0.36862746, 0.37254903, 1)
+light_energy = 0.3
+omni_range = 1.3702183
+
 [node name="LightBall" type="MeshInstance3D" parent="." unique_id=2060787145]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.325, 0)
 mesh = SubResource("SphereMesh_y6stn")
@@ -275,7 +292,7 @@ light_color = Color(0.3529412, 0.75686276, 1, 1)
 light_energy = 3.059
 omni_range = 7.704424
 
-[node name="DirectionalLight3D" type="OmniLight3D" parent="LightBall" unique_id=1020684570]
+[node name="BonusLight" type="OmniLight3D" parent="LightBall" unique_id=1020684570]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2607353, 0.07651949, 1.8381581)
 light_color = Color(0.3529412, 0.75686276, 1, 1)
 light_energy = 0.2
@@ -285,3 +302,8 @@ omni_range = 1.3702183
 libraries/ = SubResource("AnimationLibrary_uxgnm")
 autoplay = &"spinning"
 speed_scale = 1.5
+
+[node name="Timer" type="Timer" parent="." unique_id=1828037745]
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
