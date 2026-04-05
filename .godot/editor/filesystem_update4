@@ -1,9 +1,9 @@
-res://scenes/player.tscn
-res://scripts/ray_cast_3d.gd
-res://scenes/test_level.tscn
-res://scripts/test_mechanism.gd
-res://scripts/global.gd
-res://scripts/player.gd
 res://scenes/test_mechanism.tscn
-res://scripts/lantern.gd
-res://scenes/test_level.gd
+res://scripts/test_mechanism.gd
+res://scenes/ethan_level.tscn
+res://scripts/door.gd
+res://scripts/ethan_level.gd
+res://scenes/lantern.tscn
+res://scenes/anim_door.tscn
+res://scripts/global.gd
+res://scripts/anim_door.gd

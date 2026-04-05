@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://bmkatt0r8lb8v"]
+
+[ext_resource type="Script" uid="uid://ckw7qgwdguau7" path="res://scripts/ethan_level.gd" id="1_4extp"]
+[ext_resource type="PackedScene" uid="uid://b88t3cpa5njrv" path="res://scenes/test_mechanism.tscn" id="2_odi8d"]
+[ext_resource type="PackedScene" uid="uid://bsp50jj5bcdft" path="res://scenes/pause_menu.tscn" id="3_qgq63"]
+[ext_resource type="PackedScene" uid="uid://drpnw8p4g7mve" path="res://scenes/player.tscn" id="4_bb1xa"]
+[ext_resource type="PackedScene" uid="uid://bxad8vh1xr5k3" path="res://scenes/anim_door.tscn" id="5_4extp"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_toh6s"]
+lightmap_size_hint = Vector2i(12, 12)
+add_uv2 = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_odilc"]
+emission_enabled = true
+emission = Color(0.4392157, 0.6156863, 0.99607843, 1)
+emission_energy_multiplier = 7.15
+backlight_enabled = true
+backlight = Color(0.4392157, 0.6156863, 0.99607843, 1)
+
+[node name="EthanLevel" type="Node3D" unique_id=1040062394]
+script = ExtResource("1_4extp")
+
+[node name="Player" parent="." unique_id=719765561 instance=ExtResource("4_bb1xa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7784626, 0)
+
+[node name="TestMechanism" parent="." unique_id=652347845 instance=ExtResource("2_odi8d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8241128, -11.259761)
+
+[node name="PauseMenu" parent="." unique_id=1978903460 instance=ExtResource("3_qgq63")]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=702951215]
+transform = Transform3D(40.88969, 0, 0, 0, 1, 0, 0, 0, 43.326855, 0, 0, 0)
+use_collision = true
+
+[node name="LightPath" type="Node3D" parent="." unique_id=1662167870]
+visible = false
+
+[node name="LightmapGI" type="LightmapGI" parent="LightPath" unique_id=879030203]
+
+[node name="Beam1" type="MeshInstance3D" parent="LightPath" unique_id=1002024603]
+transform = Transform3D(0.05431841, 0, 0, 0, 0.787, 0, 0, 0, 3.4602134, 0, 0.5096414, -7.4710817)
+gi_mode = 2
+mesh = SubResource("PlaneMesh_toh6s")
+surface_material_override/0 = SubResource("StandardMaterial3D_odilc")
+
+[node name="Beam2" type="MeshInstance3D" parent="LightPath" unique_id=1788412101]
+transform = Transform3D(-2.3743332e-09, 0, 2.1534617, 0, 0.787, 0, -0.05431841, 0, -9.413079e-08, -2.102367, 0.5096414, -3.972742)
+mesh = SubResource("PlaneMesh_toh6s")
+surface_material_override/0 = SubResource("StandardMaterial3D_odilc")
+
+[node name="anim_door" parent="." unique_id=58532252 instance=ExtResource("5_4extp")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.358374, 2, -3.9731193)
+
+[connection signal="tower_lit" from="TestMechanism" to="." method="_on_test_mechanism_tower_lit"]

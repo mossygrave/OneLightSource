@@ -1,0 +1,132 @@
+[gd_scene format=3 uid="uid://bxad8vh1xr5k3"]
+
+[sub_resource type="GDScript" id="GDScript_1dkuy"]
+script/source = "extends Node3D
+
+var door_opened = false
+@onready var lights: Node3D = $Door/Lights
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(_delta: float) -> void:
+	pass
+
+func open_door():
+	if door_opened == false:
+		lights.visible = true
+		animation_player.play(\"door_open\")
+		door_opened = true
+"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1dkuy"]
+vertex_color_use_as_albedo = true
+roughness = 0.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_1dkuy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_11qh6"]
+vertex_color_use_as_albedo = true
+albedo_color = Color(0, 0.057640776, 0.45382154, 1)
+emission_enabled = true
+emission = Color(0.4392157, 0.6156863, 0.99607843, 1)
+emission_energy_multiplier = 7.86
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_tyhl0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_36yig"]
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.46034718, 0.46034718, 0.46034712, 1)
+emission_enabled = true
+emission = Color(0.4392157, 0.6156863, 0.99607843, 1)
+emission_energy_multiplier = 7.15
+
+[sub_resource type="Animation" id="Animation_1dkuy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Door:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_11qh6"]
+resource_name = "door_open"
+length = 4.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Door:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.96666664, 4.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0.02720213, 0), Vector3(0, 0.059503794, 0), Vector3(0, 2.5595038, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tyhl0"]
+_data = {
+&"RESET": SubResource("Animation_1dkuy"),
+&"door_open": SubResource("Animation_11qh6")
+}
+
+[node name="anim_door" type="Node3D" unique_id=58532252]
+script = SubResource("GDScript_1dkuy")
+
+[node name="Door" type="Node3D" parent="." unique_id=2129933142]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Door" unique_id=316956805]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 0.312, 0, 0, 0.0284369)
+use_collision = true
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Door" unique_id=85300254]
+transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, -1, 0, 1, -4.371139e-08, 0, -0.8263838, 0.104810596)
+use_collision = true
+radius = 0.16015625
+height = 0.26550293
+sides = 25
+material = SubResource("StandardMaterial3D_1dkuy")
+
+[node name="CSGSphere3D2" type="CSGSphere3D" parent="Door/CSGCylinder3D" unique_id=352622407]
+transform = Transform3D(0.3, 0, 0, 0, -1.3113417e-08, 0.3, 0, -0.3, -1.3113416e-08, 0, 0.023503542, 0.0021117926)
+operation = 2
+radial_segments = 25
+rings = 27
+
+[node name="Lights" type="Node3D" parent="Door" unique_id=798352218]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+visible = false
+
+[node name="LightSphere" type="MeshInstance3D" parent="Door/Lights" unique_id=1996575408]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.0053450167, 0.17113698, 0.1128737)
+mesh = SubResource("SphereMesh_1dkuy")
+skeleton = NodePath("../../CSGBox3D/CSGSphere3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_11qh6")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Door/Lights/LightSphere" unique_id=2109773009]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.6378419)
+light_color = Color(0.14509805, 0.4509804, 0.9764706, 1)
+light_energy = 2.109
+omni_range = 2.25
+
+[node name="LightPlane" type="MeshInstance3D" parent="Door/Lights" unique_id=1498047861]
+transform = Transform3D(2.0350979e-16, 4.3711395e-08, 0.0572349, 0.29410768, -4.371139e-08, 1.1655516e-30, 1.2855852e-08, 0.9999999, -2.5018165e-09, 0, -0.20395708, 0.18490595)
+mesh = SubResource("PlaneMesh_tyhl0")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_36yig")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=38984278]
+libraries/ = SubResource("AnimationLibrary_tyhl0")
+speed_scale = 0.797
