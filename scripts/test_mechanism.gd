@@ -20,22 +20,31 @@ func _process(_delta: float) -> void:
 		$Prompt.hide()
 
 	# Handle GIVE LIGHT for this object \\\\ ---> Fix for duplicates? # Fixed! -Mo
-	if Input.is_action_just_pressed("lantern_give") and is_in_area == true:
+	if global.player_has_light == true and Input.is_action_just_pressed("lantern_give") and is_in_area == true:
 		# Because is_player_in_area is global and a bool, being in one area will count for all of them 
 		# I changed it so that it is a local variable rather than a global one -Mo
-		global.player_has_light = false
-		$MechanismLight.show()
-		$Prompt.hide()
-		show_prompt = false
-		lit = true
-		tower_lit.emit()
+		if lit == false:
+			print("Lit up mechanism!")
+			global.player_has_light = false
+			global.tower_has_light = true
+			lit = true
+			$MechanismLight.show()
+			$Prompt.hide()
+			show_prompt = false
+			tower_lit.emit()
+		elif lit == true:
+			print("This is already lit!")
 
 	# Handle RETRIEVE LIGHT for this object \\\\ ---> Fix for duplicates? # Fixed! -Mo
-	elif Input.is_action_just_pressed("lantern_take") and is_in_area == true:
-		global.player_has_light = true
-		$MechanismLight.hide()
-		lit = false
-		tower_lit.emit() #this should undo whatever lighting the tower does
+	elif global.player_has_light == false and Input.is_action_just_pressed("lantern_take") and is_in_area == true:
+		if lit == true:
+			print("Unlit mechanism!")
+			global.player_has_light = true
+			global.tower_has_light = false
+			lit = false
+			$MechanismLight.hide()
+			tower_lit.emit() #this should undo whatever lighting the tower does
+			
 
 func _on_trigger_area_body_entered(_body: CharacterBody3D) -> void:
 	is_in_area = true

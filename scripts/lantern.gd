@@ -10,16 +10,16 @@ func _ready() -> void:
 # Called every frame.
 func _process(_delta: float) -> void:
 	
+	# Resume Animation when YES light
+	if global.player_has_light == true:
+		animation_player.speed_scale = 1.5
+		$AnimationPlayer.play()
 	# Slow down/Stop lantern animation when NO light
-	if global.player_has_light == false:
+	elif global.player_has_light == false:
 		if slow_down_anim == false:
 			slow_down_anim = true
 			animation_player.speed_scale = 0.5
 			$Timer.start()
-	# Resume Animation when YES light
-	else:
-		animation_player.speed_scale = 1.5
-		$AnimationPlayer.play()
 
 # Actually Stop the Lantern
 func _on_timer_timeout() -> void:

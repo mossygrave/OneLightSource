@@ -1,5 +1,9 @@
-res://scenes/basic_level.tscn
 res://scenes/player.tscn
 res://scripts/ray_cast_3d.gd
-res://scripts/basic_level.gd
+res://scenes/test_level.tscn
 res://scripts/test_mechanism.gd
+res://scripts/global.gd
+res://scripts/player.gd
+res://scenes/test_mechanism.tscn
+res://scripts/lantern.gd
+res://scenes/test_level.gd

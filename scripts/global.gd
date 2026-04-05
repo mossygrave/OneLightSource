@@ -2,6 +2,7 @@ extends Node
 
 var is_player_in_area = false
 var player_has_light = true
+var tower_has_light = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

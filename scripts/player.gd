@@ -122,17 +122,15 @@ func sprint():
 
 # ---------------- Handle Lantern ----------------
 func lantern_on_off():
-	# If have light and see thing, give light to thing
-	if Input.is_action_just_pressed("lantern_give"):
-		if global.player_has_light == true and global.is_player_in_area == true:
-			global.player_has_light = false
-			$Head/SubViewportContainer/SubViewport/Lantern/OffLight.show()
-			$Head/LanternLight.hide()
-			$Head/SubViewportContainer/SubViewport/Lantern/LightBall.hide()
-	# If no light and see thing, take light from thing
-	elif Input.is_action_just_pressed("lantern_take"):
-		if global.player_has_light == false and global.is_player_in_area == true:
-			global.player_has_light = true
-			$Head/SubViewportContainer/SubViewport/Lantern/OffLight.hide()
-			$Head/LanternLight.show()
-			$Head/SubViewportContainer/SubViewport/Lantern/LightBall.show()
+	# If no light, lantern light off
+	if global.player_has_light == false:
+		#print("Lantern Off") <--- Debugging Tool
+		$Head/SubViewportContainer/SubViewport/Lantern/OffLight.show()
+		$Head/LanternLight.hide()
+		$Head/SubViewportContainer/SubViewport/Lantern/LightBall.hide()
+	# If yes light, lantern light on
+	elif global.player_has_light == true:
+		#print("Lantern On") <--- Debugging Tool
+		$Head/SubViewportContainer/SubViewport/Lantern/OffLight.hide()
+		$Head/LanternLight.show()
+		$Head/SubViewportContainer/SubViewport/Lantern/LightBall.show()
