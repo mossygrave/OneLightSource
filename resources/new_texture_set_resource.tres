@@ -1,0 +1,13 @@
+[gd_resource type="TextureSetResource" format=3 uid="uid://2o2nd63kreyc"]
+
+[ext_resource type="Texture2D" uid="uid://bk1hvwvttgif1" path="res://assets/Material-LIB/Nature/FoliageForest/FoliageForest-B.png" id="1_u8on8"]
+[ext_resource type="Texture2D" uid="uid://bjrnpcyemuy7q" path="res://assets/Material-LIB/Nature/FoliageForest/FoliageForest-M.png" id="2_w3rc3"]
+[ext_resource type="Texture2D" uid="uid://c22oto4cag2ak" path="res://assets/Material-LIB/Nature/FoliageForest/FoliageForest-N.png" id="3_iuapx"]
+[ext_resource type="Texture2D" uid="uid://b0l5lyy7nyl4r" path="res://assets/Material-LIB/Nature/FoliageForest/FoliageForest-R.png" id="4_85vjj"]
+
+[resource]
+name = "Foliage"
+albedoTexture = ExtResource("1_u8on8")
+normalTexture = ExtResource("3_iuapx")
+roughnessTexture = ExtResource("4_85vjj")
+heightTexture = ExtResource("2_w3rc3")
