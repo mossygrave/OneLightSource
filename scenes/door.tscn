@@ -1,11 +1,15 @@
 [gd_scene format=3 uid="uid://bycjnt3vemx2h"]
 
+[ext_resource type="Script" uid="uid://yf1grqdeqj7m" path="res://scripts/door.gd" id="1_hpvv5"]
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_5f452"]
 size = Vector3(3, 3, 1)
 
 [node name="Door" type="Node3D" unique_id=1315072330]
+script = ExtResource("1_hpvv5")
 
 [node name="Area3D" type="Area3D" parent="." unique_id=1716357903]
+collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=353600513]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.14487898)
@@ -14,3 +18,6 @@ disabled = true
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1312070552]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 0.312, 0, 0, -0.4715631)
+use_collision = true
+
+[connection signal="body_shape_entered" from="Area3D" to="." method="_on_area_3d_body_shape_entered"]

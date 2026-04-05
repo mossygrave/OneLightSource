@@ -6,6 +6,17 @@
 [ext_resource type="PackedScene" uid="uid://bsp50jj5bcdft" path="res://scenes/pause_menu.tscn" id="4_qb4si"]
 [ext_resource type="PackedScene" uid="uid://bycjnt3vemx2h" path="res://scenes/door.tscn" id="5_odilc"]
 
+[sub_resource type="PlaneMesh" id="PlaneMesh_toh6s"]
+lightmap_size_hint = Vector2i(12, 12)
+add_uv2 = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_odilc"]
+emission_enabled = true
+emission = Color(0.4392157, 0.6156863, 0.99607843, 1)
+emission_energy_multiplier = 7.15
+backlight_enabled = true
+backlight = Color(0.4392157, 0.6156863, 0.99607843, 1)
+
 [node name="BasicLevel" type="Node3D" unique_id=1040062394]
 script = ExtResource("1_toh6s")
 
@@ -19,14 +30,34 @@ use_collision = true
 [node name="PauseMenu" parent="." unique_id=1978903460 instance=ExtResource("4_qb4si")]
 
 [node name="Player" parent="." unique_id=719765561 instance=ExtResource("2_qb4si")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.979805, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7784626, 0)
 
 [node name="Door" parent="." unique_id=1315072330 instance=ExtResource("5_odilc")]
-transform = Transform3D(-4.3711385e-08, 0, 0.9999999, 0, 1, 0, -0.9999999, 0, -4.3711385e-08, -4.254441, -2.9881074, -4.003371)
-
-[node name="Marker3D" type="Marker3D" parent="Door" unique_id=608400365]
+transform = Transform3D(-4.3711385e-08, 0, 0.9999999, 0, 1, 0, -0.9999999, 0, -4.3711385e-08, -4.254441, -2.5350213, -4.003371)
 
 [node name="Open" type="Marker3D" parent="." unique_id=2021774468]
-transform = Transform3D(-4.3711385e-08, 0, 0.9999999, 0, 1, 0, -0.9999999, 0, -4.3711385e-08, -4.254441, 1.8351476, -4.003371)
+transform = Transform3D(-4.3711385e-08, 0, 0.9999999, 0, 1, 0, -0.9999999, 0, -4.3711385e-08, -4.254, 1.866838, -4.003)
+
+[node name="Closed" type="Marker3D" parent="." unique_id=608400365]
+transform = Transform3D(-4.3711385e-08, 0, 0.9999999, 0, 1, 0, -0.9999999, 0, -4.3711385e-08, -4.254441, -2.9881074, -4.003371)
+
+[node name="LightPath" type="Node3D" parent="." unique_id=1662167870]
+visible = false
+
+[node name="LightmapGI" type="LightmapGI" parent="LightPath" unique_id=879030203]
+
+[node name="Beam1" type="MeshInstance3D" parent="LightPath" unique_id=1002024603]
+transform = Transform3D(0.05431841, 0, 0, 0, 0.787, 0, 0, 0, 3.4602134, 0, 0.5096414, -7.4710817)
+gi_mode = 2
+mesh = SubResource("PlaneMesh_toh6s")
+surface_material_override/0 = SubResource("StandardMaterial3D_odilc")
+
+[node name="Beam2" type="MeshInstance3D" parent="LightPath" unique_id=1788412101]
+transform = Transform3D(-2.3743332e-09, 0, 2.1534617, 0, 0.787, 0, -0.05431841, 0, -9.413079e-08, -2.102367, 0.5096414, -3.972742)
+mesh = SubResource("PlaneMesh_toh6s")
+surface_material_override/0 = SubResource("StandardMaterial3D_odilc")
+
+[node name="PathCorner" type="Marker3D" parent="." unique_id=2098098458]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.51, -4.003)
 
 [connection signal="tower_lit" from="TestMechanism" to="." method="_on_test_mechanism_tower_lit"]
