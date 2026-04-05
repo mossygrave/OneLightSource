@@ -103,3 +103,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7816479, 0)
 
 [node name="TestMechanism" parent="." unique_id=652347845 instance=ExtResource("3_j6w7d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0003080368, 0.46140593, -7.569414)
+
+[node name="TestMechanism2" parent="." unique_id=1017247039 instance=ExtResource("3_j6w7d")]
+transform = Transform3D(0.6621886, 0, -0.7493372, 0, 1, 0, 0.7493372, 0, 0.6621886, 5.8, 0.461, -5.315)

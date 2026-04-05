@@ -8,8 +8,9 @@ func _ready() -> void:
 
 # Detect Collisions, Set Global Variable
 func _process(_delta: float) -> void:
-	if is_colliding():
-		if Area3D:
-			global.is_player_in_area = true
-	else:
-		global.is_player_in_area = false
+	pass
+	#if is_colliding():
+		#if Area3D:
+			#global.is_player_in_area = true
+	#else:
+		#global.is_player_in_area = false

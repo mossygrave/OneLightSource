@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bycjnt3vemx2h"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5f452"]
+size = Vector3(3, 3, 1)
+
+[node name="Door" type="Node3D" unique_id=1315072330]
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1716357903]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=353600513]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.14487898)
+shape = SubResource("BoxShape3D_5f452")
+disabled = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1312070552]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 0.312, 0, 0, -0.4715631)

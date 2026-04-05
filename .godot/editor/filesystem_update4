@@ -1,11 +1,5 @@
+res://scenes/basic_level.tscn
 res://scenes/player.tscn
-res://scenes/test_mechanism.tscn
-res://scripts/test_mechanism.gd
-res://scripts/global.gd
-res://scripts/player.gd
-res://scenes/lantern.tscn
 res://scripts/ray_cast_3d.gd
-res://scripts/lantern.gd
-res://scenes/test_level.tscn
-res://scenes/light_particles.tscn
-res://scripts/pause_menu.gd
+res://scripts/basic_level.gd
+res://scripts/test_mechanism.gd

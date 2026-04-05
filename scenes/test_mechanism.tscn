@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dmpru034idook" path="res://scenes/light_particles.tscn" id="2_gql57"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5rfby"]
-size = Vector3(1.4228516, 2.103302, 1.5644531)
+size = Vector3(1.4228516, 2.103302, 2.2120361)
 
 [sub_resource type="SphereMesh" id="SphereMesh_5rfby"]
 
@@ -48,7 +48,7 @@ light_bake_mode = 1
 [node name="TriggerArea" type="Area3D" parent="." unique_id=816327437]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="TriggerArea" unique_id=1246327820]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.83543265, 0.096132636)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.83543265, 0.41992414)
 shape = SubResource("BoxShape3D_5rfby")
 
 [node name="MechanismLight" type="Node3D" parent="." unique_id=1912937964]

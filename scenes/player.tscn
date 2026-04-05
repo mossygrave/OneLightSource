@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bc3d30ugd1x1a" path="res://scripts/player.gd" id="1_3vyb7"]
 [ext_resource type="PackedScene" uid="uid://bij6rq0ssbq7a" path="res://scenes/lantern.tscn" id="2_g2els"]
 [ext_resource type="Script" uid="uid://daobg7jpqgj57" path="res://scripts/ray_cast_3d.gd" id="2_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://df5k2jupasfq5" path="res://assets/Skyboxes/PurplyBlueSky.png" id="2_qlg0r"]
 [ext_resource type="PackedScene" uid="uid://dmpru034idook" path="res://scenes/light_particles.tscn" id="3_dqkch"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_tuyoq"]
@@ -11,6 +12,17 @@
 height = 2.3
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_fjrip"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_tuyoq"]
+panorama = ExtResource("2_qlg0r")
+
+[sub_resource type="Sky" id="Sky_fjrip"]
+sky_material = SubResource("PanoramaSkyMaterial_tuyoq")
+
+[sub_resource type="Environment" id="Environment_smehm"]
+background_mode = 2
+background_energy_multiplier = 0.25
+sky = SubResource("Sky_fjrip")
 
 [sub_resource type="SphereMesh" id="SphereMesh_dqkch"]
 
@@ -39,6 +51,7 @@ shape = SubResource("SphereShape3D_fjrip")
 
 [node name="Camera3D" type="Camera3D" parent="Head" unique_id=712623344]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
+environment = SubResource("Environment_smehm")
 
 [node name="RayCast3D" type="RayCast3D" parent="Head/Camera3D" unique_id=1382697703]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
@@ -62,16 +75,16 @@ mesh = SubResource("SphereMesh_dqkch")
 surface_material_override/0 = SubResource("StandardMaterial3D_qlg0r")
 
 [node name="PlayerLight" type="OmniLight3D" parent="Head/LanternLight" unique_id=1748179825]
-transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -1.4646955, 0, 1.8529956)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4646955, 0, 1.8529956)
 light_color = Color(0.3529412, 0.75686276, 1, 1)
 light_energy = 3.059
-omni_range = 7.704424
+omni_range = 4.123571
 
 [node name="BonusLight" type="OmniLight3D" parent="Head/LanternLight" unique_id=792698211]
-transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -2.382983, 0.07651949, 3.299996)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.382983, 0.07651949, 3.299996)
 light_color = Color(0.3529412, 0.75686276, 1, 1)
 light_energy = 0.2
-omni_range = 1.3702183
+omni_range = 1.7387215
 
 [node name="LightParticles" parent="Head/LanternLight" unique_id=357665813 instance=ExtResource("3_dqkch")]
 

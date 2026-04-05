@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://bmwcrshyc1s8x"]
+
+[ext_resource type="Script" uid="uid://dieklt82kpc11" path="res://scripts/basic_level.gd" id="1_toh6s"]
+[ext_resource type="PackedScene" uid="uid://drpnw8p4g7mve" path="res://scenes/player.tscn" id="2_qb4si"]
+[ext_resource type="PackedScene" uid="uid://b88t3cpa5njrv" path="res://scenes/test_mechanism.tscn" id="3_toh6s"]
+[ext_resource type="PackedScene" uid="uid://bsp50jj5bcdft" path="res://scenes/pause_menu.tscn" id="4_qb4si"]
+[ext_resource type="PackedScene" uid="uid://bycjnt3vemx2h" path="res://scenes/door.tscn" id="5_odilc"]
+
+[node name="BasicLevel" type="Node3D" unique_id=1040062394]
+script = ExtResource("1_toh6s")
+
+[node name="TestMechanism" parent="." unique_id=652347845 instance=ExtResource("3_toh6s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8241128, -11.259761)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=702951215]
+transform = Transform3D(40.88969, 0, 0, 0, 1, 0, 0, 0, 43.326855, 0, 0, 0)
+use_collision = true
+
+[node name="PauseMenu" parent="." unique_id=1978903460 instance=ExtResource("4_qb4si")]
+
+[node name="Player" parent="." unique_id=719765561 instance=ExtResource("2_qb4si")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.979805, 0)
+
+[node name="Door" parent="." unique_id=1315072330 instance=ExtResource("5_odilc")]
+transform = Transform3D(-4.3711385e-08, 0, 0.9999999, 0, 1, 0, -0.9999999, 0, -4.3711385e-08, -4.254441, -2.9881074, -4.003371)
+
+[node name="Marker3D" type="Marker3D" parent="Door" unique_id=608400365]
+
+[node name="Open" type="Marker3D" parent="." unique_id=2021774468]
+transform = Transform3D(-4.3711385e-08, 0, 0.9999999, 0, 1, 0, -0.9999999, 0, -4.3711385e-08, -4.254441, 1.8351476, -4.003371)
+
+[connection signal="tower_lit" from="TestMechanism" to="." method="_on_test_mechanism_tower_lit"]
