@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1775334320
+::res://::1775365531
 icon.svg::CompressedTexture2D::3244085221598579901::1775326546::1775326785::1::::<><><>0<>0<>d0b6d532f8cb223fa940ab57523967ef<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://assets/::1775334262
 ::res://assets/BinbunVFX_Vol2/::1775326541
@@ -225,7 +225,7 @@ SkySkybox.png::CompressedTexture2D::1118396736433858342::1775326545::1775326794:
 SunsetSky.png::CompressedTexture2D::6721562633243556777::1775326545::1775326795::1::::<><><>0<>0<>2748e3535b6d61708f2d69e6cdbe9704<>res://.godot/imported/SunsetSky.png-b0da2a7060af090f201fa6bc77ea5627.ctex::
 ::res://assets/Stylized Nature MegaKit[Standard]/::1775326546
 License_Standard.txt::TextFile::-1::1775326545::0::1::::<><><>0<>0<><>::
-::res://assets/Stylized Nature MegaKit[Standard]/glTF/::1775327350
+::res://assets/Stylized Nature MegaKit[Standard]/glTF/::1775338958
 Bark_DeadTree.png::CompressedTexture2D::4987106613877577004::1775326546::1775334327::1::::<><><>0<>0<>25e20e4f99d74707116925d50abfc393<>res://.godot/imported/Bark_DeadTree.png-2cfbf64f609e3955b8969574421a1578.s3tc.ctex::
 Bark_DeadTree_Normal.png::CompressedTexture2D::7061423290801968821::1775326546::1775334328::1::::<><><>0<>0<>1d8d968c1bac325a6f9da5665cdb4aed<>res://.godot/imported/Bark_DeadTree_Normal.png-3e9bc133a7efcb1b2c00427b1c50d18c.s3tc.ctex::
 Bark_NormalTree.png::CompressedTexture2D::2717384670801309178::1775326546::1775334328::1::::<><><>0<>0<>6b9dea19d388cf32388fe48247c1d5e9<>res://.godot/imported/Bark_NormalTree.png-44d818f16c4a39058f71f0f658a2a963.s3tc.ctex::
@@ -269,7 +269,7 @@ Leaves_TwistedTree_C.png::CompressedTexture2D::1430152182244873840::1775326546::
 Mushrooms.png::CompressedTexture2D::2690823428866068204::1775326546::1775334328::1::::<><><>0<>0<>0335f5f22f60b624704c796018a9f940<>res://.godot/imported/Mushrooms.png-3a69dd8b9eb09df1926a969755617698.s3tc.ctex::
 Mushroom_Common.gltf::PackedScene::3855680345941181241::1775326546::1775334334::1::::<><><>0<>0<>03f7a38df96fca11d60371f7309345eb<>res://.godot/imported/Mushroom_Common.gltf-c35caf12d0db63dd924deacf43ce4e62.scn::uid://belpp64lcl3c7::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Mushrooms.png
 Mushroom_Laetiporus.gltf::PackedScene::2947187940782398425::1775326546::1775334333::1::::<><><>0<>0<>427479ea32d78227e44ff7cdbf3b2891<>res://.godot/imported/Mushroom_Laetiporus.gltf-b904f48691804a61b196b10aeba62552.scn::uid://belpp64lcl3c7::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Mushrooms.png
-PathRocks_Diffuse.png::CompressedTexture2D::3110297094905939740::1775326546::1775334352::1::::<><><>0<>0<>1941ce112877a53a44236c0405dc4b98<>res://.godot/imported/PathRocks_Diffuse.png-fee098adee24ddc2bc396c813d91e4bf.s3tc.ctex::
+PathRocks_Diffuse.png::CompressedTexture2D::3110297094905939740::1775326546::1775338958::1::::<><><>0<>0<>1941ce112877a53a44236c0405dc4b98<>res://.godot/imported/PathRocks_Diffuse.png-fee098adee24ddc2bc396c813d91e4bf.s3tc.ctex::
 Pebble_Round_1.gltf::PackedScene::4954774215994057013::1775326546::1775334333::1::::<><><>0<>0<>d110c6a45962467087d1bcd4dd283651<>res://.godot/imported/Pebble_Round_1.gltf-b171847590847f4edcfe96e074bc1a83.scn::uid://bkkweym06bx2s::::res://assets/Stylized Nature MegaKit[Standard]/glTF/PathRocks_Diffuse.png
 Pebble_Round_2.gltf::PackedScene::3886764624058166531::1775326546::1775334334::1::::<><><>0<>0<>6729dd0421447236850eb744170397e0<>res://.godot/imported/Pebble_Round_2.gltf-8184217e78fe6ac75a1f14967bbac512.scn::uid://bkkweym06bx2s::::res://assets/Stylized Nature MegaKit[Standard]/glTF/PathRocks_Diffuse.png
 Pebble_Round_3.gltf::PackedScene::9214523238216006725::1775326546::1775334334::1::::<><><>0<>0<>2b41ae81797c6385ca6d682aaaf02949<>res://.godot/imported/Pebble_Round_3.gltf-47b4844d557c2b18efb0adf0883da0f0.scn::uid://bkkweym06bx2s::::res://assets/Stylized Nature MegaKit[Standard]/glTF/PathRocks_Diffuse.png
@@ -306,7 +306,7 @@ RockPath_Square_Small_3.gltf::PackedScene::459382149508671350::1775326546::17753
 RockPath_Square_Thin.gltf::PackedScene::6152647102198025800::1775326546::1775334348::1::::<><><>0<>0<>e1c4540302a2666983dc2b7efb7974bc<>res://.godot/imported/RockPath_Square_Thin.gltf-6544c34fb3de73145dfc070a2daa0ae2.scn::uid://bkkweym06bx2s::::res://assets/Stylized Nature MegaKit[Standard]/glTF/PathRocks_Diffuse.png
 RockPath_Square_Wide.gltf::PackedScene::2672041176383812471::1775326546::1775334347::1::::<><><>0<>0<>2b4d359125ee7ba31a51979a512a3ff4<>res://.godot/imported/RockPath_Square_Wide.gltf-cef89a5eb7c081512fd67496286e12a8.scn::uid://bkkweym06bx2s::::res://assets/Stylized Nature MegaKit[Standard]/glTF/PathRocks_Diffuse.png
 Rocks_Desert_Diffuse.png::CompressedTexture2D::5931468614874753188::1775326546::1775334327::1::::<><><>0<>0<>000a3253055c16fdbffb669bcdcbf484<>res://.godot/imported/Rocks_Desert_Diffuse.png-653d70af4fecf12c081d6b4eb3279069.ctex::
-Rocks_Diffuse.png::CompressedTexture2D::5868115195327979751::1775326546::1775334352::1::::<><><>0<>0<>923529e8b2e13904059b878e8a7fdc86<>res://.godot/imported/Rocks_Diffuse.png-7629a25e4e251772b8f2a76cb815d798.s3tc.ctex::
+Rocks_Diffuse.png::CompressedTexture2D::5868115195327979751::1775326546::1775338958::1::::<><><>0<>0<>923529e8b2e13904059b878e8a7fdc86<>res://.godot/imported/Rocks_Diffuse.png-7629a25e4e251772b8f2a76cb815d798.s3tc.ctex::
 Rock_Medium_1.gltf::PackedScene::1310382962095497583::1775326546::1775334346::1::::<><><>0<>0<>715f850e12e92876cbaea28c2cccb4b9<>res://.godot/imported/Rock_Medium_1.gltf-24180104fa9046c717a3051192040576.scn::uid://cpus886bmmdgp::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Rocks_Diffuse.png
 Rock_Medium_2.gltf::PackedScene::8095023598399157358::1775326546::1775334345::1::::<><><>0<>0<>b8f5e5043afe1fff4d0238f9265000ea<>res://.godot/imported/Rock_Medium_2.gltf-be20e90709a9c64e6f07ffa2b595755e.scn::uid://cpus886bmmdgp::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Rocks_Diffuse.png
 Rock_Medium_3.gltf::PackedScene::8346995494019564522::1775326546::1775334345::1::::<><><>0<>0<>22f6c2551ad7649b22a62de23cec1b1b<>res://.godot/imported/Rock_Medium_3.gltf-c633d4b43bbfaf135f9ec6ea2c4b2b9d.scn::uid://cpus886bmmdgp::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Rocks_Diffuse.png
@@ -315,7 +315,7 @@ TwistedTree_2.gltf::PackedScene::5786359041830561116::1775326546::1775334332::1:
 TwistedTree_3.gltf::PackedScene::1307537963273715944::1775326546::1775334331::1::::<><><>0<>0<>b85d36963934ba6d07b349393ce9def7<>res://.godot/imported/TwistedTree_3.gltf-44c2b3d293ff4ad8d57a19217b583366.scn::uid://jnw0gcgbwj0t::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Bark_TwistedTree.png<>uid://gqiosm8t8hq7::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Bark_TwistedTree_Normal.png<>uid://um1nrrdf5trc::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Leaves_TwistedTree_C.png
 TwistedTree_4.gltf::PackedScene::5290486610208811425::1775326546::1775334330::1::::<><><>0<>0<>35e0670c6d4e04c5dc4db30d1b92648b<>res://.godot/imported/TwistedTree_4.gltf-da0e75c4fa3e1c5b4dbb0503a7e0f10f.scn::uid://jnw0gcgbwj0t::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Bark_TwistedTree.png<>uid://gqiosm8t8hq7::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Bark_TwistedTree_Normal.png<>uid://um1nrrdf5trc::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Leaves_TwistedTree_C.png
 TwistedTree_5.gltf::PackedScene::2254021459551107748::1775326546::1775334338::1::::<><><>0<>0<>27e5fff3c1e626d96f6dba53b372c19c<>res://.godot/imported/TwistedTree_5.gltf-1726be42fa7826bdef64d8bc9a945148.scn::uid://jnw0gcgbwj0t::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Bark_TwistedTree.png<>uid://gqiosm8t8hq7::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Bark_TwistedTree_Normal.png<>uid://um1nrrdf5trc::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Leaves_TwistedTree_C.png
-::res://assets/Stylized Nature MegaKit[Standard]/Textures/::1775327350
+::res://assets/Stylized Nature MegaKit[Standard]/Textures/::1775334327
 Bark_DeadTree.png::CompressedTexture2D::4068288932180997480::1775326546::1775334326::1::::<><><>0<>0<>b6d3932970f48b7140b831269a09831b<>res://.godot/imported/Bark_DeadTree.png-8363eae15fdcba906c5831b82209f63f.ctex::
 Bark_DeadTree_Normal.png::CompressedTexture2D::4124036307915690625::1775326546::1775334326::1::::<><><>0<>0<>d9784245dce7d89775b3299899cf0527<>res://.godot/imported/Bark_DeadTree_Normal.png-97edb66d9a71c6f612352d6c7b18ac2a.ctex::
 Bark_NormalTree.png::CompressedTexture2D::8362467301450378962::1775326546::1775334326::1::::<><><>0<>0<>d2d3d6bf778486cf2c91bb69099aa1db<>res://.godot/imported/Bark_NormalTree.png-4eb1906d52dcfec86ed7ae59a45a600b.ctex::
@@ -336,6 +336,13 @@ Mushrooms.png::CompressedTexture2D::9026874178022054892::1775326546::1775334326:
 PathRocks_Diffuse.png::CompressedTexture2D::6825572224382509140::1775326546::1775334326::1::::<><><>0<>0<>a99a7acdaa6ebd7ace079f1652e9a96d<>res://.godot/imported/PathRocks_Diffuse.png-d144b9ae0a19ccadbd4dd8400c66a857.ctex::
 Rocks_Desert_Diffuse.png::CompressedTexture2D::6745829127449237190::1775326546::1775334327::1::::<><><>0<>0<>c61fb2ba9c894ca3b96e61202717e346<>res://.godot/imported/Rocks_Desert_Diffuse.png-eea17ab0c5e9461cf33af03fd5693612.ctex::
 Rocks_Diffuse.png::CompressedTexture2D::457232826307033135::1775326546::1775334327::1::::<><><>0<>0<>0de0accfa4fade1f25c0d361f78424ee<>res://.godot/imported/Rocks_Diffuse.png-39416e10b14e47e3e3345fc0f6e90c81.ctex::
-::res://scenes/::1775327350
-lantern.tscn::PackedScene::2968424297691705000::1775327350::0::1::::<><><>0<>0<><>::
-::res://scripts/::1775327007
+::res://scenes/::1775360479
+lantern.tscn::PackedScene::2968424297691705000::1775348020::0::1::::<><><>0<>0<><>::
+pause_menu.tscn::PackedScene::3682652178097069289::1775338935::0::1::::<><><>0<>0<><>::res://scripts/pause_menu.gd
+player.tscn::PackedScene::8384268425378160702::1775347952::0::1::::<><><>0<>0<><>::uid://bc3d30ugd1x1a::::res://scripts/player.gd<>uid://bij6rq0ssbq7a::::res://scenes/lantern.tscn
+test_level.tscn::PackedScene::3568758052933150243::1775345164::0::1::::<><><>0<>0<><>::uid://drpnw8p4g7mve::::res://scenes/player.tscn<>uid://bsp50jj5bcdft::::res://scenes/pause_menu.tscn<>uid://b88t3cpa5njrv::::res://scenes/test_mechanism.tscn
+test_mechanism.tscn::PackedScene::4771980742983420803::1775360479::0::1::::<><><>0<>0<><>::uid://cq8uffl0kefrf::::res://scripts/test_mechanism.gd
+::res://scripts/::1775360479
+pause_menu.gd::GDScript::5960934035727244648::1775338935::0::1::::<>CanvasLayer<><>0<>0<><>::
+player.gd::GDScript::2584834445547988880::1775347952::0::1::::<>CharacterBody3D<><>0<>0<><>::
+test_mechanism.gd::GDScript::5965210881062558459::1775360479::0::1::::<>Node3D<><>0<>0<><>::

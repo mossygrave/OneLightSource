@@ -5,7 +5,7 @@ extends CharacterBody3D
 const CROUCH_MOVE_SPEED := 1.5
 const WALKING_SPEED := 3.0
 const SPRINT_SPEED := 6.0
-const JUMP_VELOCITY := 4.5
+const JUMP_VELOCITY := 4
 var sprinting = false
 
 # Crouch Variables/Constants
@@ -18,7 +18,6 @@ var sensitivity := 0.1
 
 # Other
 @onready var camera = $Head/Camera3D
-var flashlight = false
 
 
 # ------------------ Ready Function ------------------
@@ -63,11 +62,6 @@ func _input(event: InputEvent) -> void:
 		$Head.rotation.x = clamp($Head.rotation.x, deg_to_rad(-80), deg_to_rad(80))
 		rotation.y = $CameraCollision.global_rotation.y
 
-# ------------------ Head Bobbing ------------------
-#func headbobbing():
-	#while speed > 0:
-		#$Head/Camera3D
-
 # ------------------ Sprint ------------------
 func sprint():
 	if Input.is_action_just_pressed("sprint") and is_on_floor():
@@ -82,7 +76,7 @@ func sprint():
 		speed = WALKING_SPEED
 		sprinting = false
 
-# ------------------ Crouch ------------------
+# ------------------ Crouch ------------------ (Currently not in use, skip)
 #func crouch():
 	#if Input.is_action_just_pressed("crouch(hold)"):
 		#$WalkingSound.stop()
@@ -126,14 +120,19 @@ func sprint():
 				#speed = WALKING_SPEED
 				#crouching = false
 
+# ---------------- Handle Lantern ----------------
 func lantern_on_off():
-	if Input.is_action_just_pressed("lantern"):
-		$FlashlightClick.play()
-		if flashlight == false:
-			flashlight = true
-			#light_ball.emission = false
-			$Head/Lantern/LightBall.hide()
-		else:
-			flashlight = false
-			#light_ball.emission = false
-			$Head/Lantern/LightBall.show()
+	# If have light and see thing, give light to thing
+	if Input.is_action_just_pressed("lantern_give"):
+		if global.player_has_light == true and global.is_player_in_area == true:
+			global.player_has_light = false
+			$Head/SubViewportContainer/SubViewport/Lantern/OffLight.show()
+			$Head/LanternLight.hide()
+			$Head/SubViewportContainer/SubViewport/Lantern/LightBall.hide()
+	# If no light and see thing, take light from thing
+	elif Input.is_action_just_pressed("lantern_take"):
+		if global.player_has_light == false and global.is_player_in_area == true:
+			global.player_has_light = true
+			$Head/SubViewportContainer/SubViewport/Lantern/OffLight.hide()
+			$Head/LanternLight.show()
+			$Head/SubViewportContainer/SubViewport/Lantern/LightBall.show()
