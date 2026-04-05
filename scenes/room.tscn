@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://bmkeqoj6jj4cn" path="res://assets/Material-LIB/Nature/FoliageGrass/FoliageGrass-N.png" id="11_vfrn5"]
 [ext_resource type="Texture2D" uid="uid://qjp87inkve0b" path="res://assets/Material-LIB/Nature/FoliageGrass/FoliageGrass-R.png" id="12_katsu"]
 [ext_resource type="PackedScene" uid="uid://drpnw8p4g7mve" path="res://scenes/player.tscn" id="16_dynfe"]
+[ext_resource type="PackedScene" uid="uid://bsp50jj5bcdft" path="res://scenes/pause_menu.tscn" id="17_vfrn5"]
 
 [sub_resource type="TextureSetResource" id="TextureSetResource_jxwrd"]
 albedoTexture = ExtResource("5_tk5fv")
@@ -100,3 +101,5 @@ size = Vector2i(511, 512)
 
 [node name="Player" parent="." unique_id=719765561 instance=ExtResource("16_dynfe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.54341, 8.581055, 10.883835)
+
+[node name="PauseMenu" parent="." unique_id=1978903460 instance=ExtResource("17_vfrn5")]

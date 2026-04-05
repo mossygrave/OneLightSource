@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1775405898
+::res://::1775421163
 icon.svg::CompressedTexture2D::3244085221598579901::1775331428::1775331480::1::::<><><>0<>0<>d0b6d532f8cb223fa940ab57523967ef<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://addons/::1775380964
 ::res://addons/terrabrush/::1775380965
@@ -296,11 +296,11 @@ Thatch-B.png::CompressedTexture2D::2129408277915200098::1775331427::1775331427::
 Thatch-M.png::CompressedTexture2D::5933501315099935866::1775331427::1775331427::1::::<><><>0<>0<>b415f880e546798bf0218202269e395a<>res://.godot/imported/Thatch-M.png-65c97d9ba3e9a12149609d390dc994e1.ctex::
 Thatch-N.png::CompressedTexture2D::6794401208060049626::1775331427::1775331427::1::::<><><>0<>0<>a59ffdbe224a34d3a51f9cd1cb4b38d7<>res://.godot/imported/Thatch-N.png-ca0d2d22e2ae8db0ae201dbd6c14b1e9.ctex::
 Thatch-R.png::CompressedTexture2D::1594621796503692773::1775331427::1775331427::1::::<><><>0<>0<>6af34fc3b94d78af674d68942d2cf9be<>res://.godot/imported/Thatch-R.png-da3bccebb77b6390dcbd9d19ca3d7094.ctex::
-::res://assets/Skyboxes/::1775331428
+::res://assets/Skyboxes/::1775413027
 BlueSkySkybox.png::CompressedTexture2D::4981108236303804777::1775331427::1775331427::1::::<><><>0<>0<>4fd6a3db2281e1b61668c7655b91d734<>res://.godot/imported/BlueSkySkybox.png-ee829b312cdcdae090ef1019e792e887.ctex::
 GreenSky.png::CompressedTexture2D::236506631358735711::1775331427::1775331427::1::::<><><>0<>0<>7b7cfdd4e01edf8fd8d7579cb01f8dc6<>res://.godot/imported/GreenSky.png-0f7bac444c583cf8e64863d86468da79.ctex::
 Permissions.txt::TextFile::-1::1775331427::0::1::::<><><>0<>0<><>::
-PurplyBlueSky.png::CompressedTexture2D::7572793492542840002::1775331428::1775406350::1::::<><><>0<>0<>0b0bd40830d78a57b465f416ce57e61e<>res://.godot/imported/PurplyBlueSky.png-73ed33c340936c6b014360719c76a504.s3tc.ctex::
+PurplyBlueSky.png::CompressedTexture2D::7572793492542840002::1775331428::1775413027::1::::<><><>0<>0<>0b0bd40830d78a57b465f416ce57e61e<>res://.godot/imported/PurplyBlueSky.png-73ed33c340936c6b014360719c76a504.s3tc.ctex::
 SkySkybox.png::CompressedTexture2D::1118396736433858342::1775331428::1775331428::1::::<><><>0<>0<>f8468b79bc1beff14aa55dc9be97c84a<>res://.godot/imported/SkySkybox.png-60c54f0035252f097d48b3987ee4d182.ctex::
 SunsetSky.png::CompressedTexture2D::6721562633243556777::1775331428::1775331428::1::::<><><>0<>0<>2748e3535b6d61708f2d69e6cdbe9704<>res://.godot/imported/SunsetSky.png-b0da2a7060af090f201fa6bc77ea5627.ctex::
 ::res://assets/Stylized Nature MegaKit[Standard]/::1775331428
@@ -418,23 +418,26 @@ Rocks_Desert_Diffuse.png::CompressedTexture2D::6745829127449237190::1775331428::
 Rocks_Diffuse.png::CompressedTexture2D::457232826307033135::1775331428::1775331428::1::::<><><>0<>0<>0de0accfa4fade1f25c0d361f78424ee<>res://.godot/imported/Rocks_Diffuse.png-39416e10b14e47e3e3345fc0f6e90c81.ctex::
 ::res://resources/::1775380965
 new_texture_set_resource.tres::TextureSetResource::1925662847654385578::1775380965::0::1::::<><><>0<>0<><>::uid://bk1hvwvttgif1::::res://assets/Material-LIB/Nature/FoliageForest/FoliageForest-B.png<>uid://bjrnpcyemuy7q::::res://assets/Material-LIB/Nature/FoliageForest/FoliageForest-M.png<>uid://c22oto4cag2ak::::res://assets/Material-LIB/Nature/FoliageForest/FoliageForest-N.png<>uid://b0l5lyy7nyl4r::::res://assets/Material-LIB/Nature/FoliageForest/FoliageForest-R.png
-::res://scenes/::1775384970
-basic_level.tscn::PackedScene::3274255867748821105::1775384970::0::1::::<><><>0<>0<><>::
+::res://scenes/::1775419096
+basic_level.tscn::PackedScene::3274255867748821105::1775419096::0::1::::<><><>0<>0<><>::uid://dieklt82kpc11::::res://scripts/basic_level.gd<>uid://drpnw8p4g7mve::::res://scenes/player.tscn<>uid://b88t3cpa5njrv::::res://scenes/test_mechanism.tscn<>uid://bsp50jj5bcdft::::res://scenes/pause_menu.tscn<>uid://bycjnt3vemx2h::::res://scenes/door.tscn
+door.tscn::PackedScene::4075652396927824441::1775417286::0::1::::<><><>0<>0<><>::uid://yf1grqdeqj7m::::res://scripts/door.gd
 lantern.tscn::PackedScene::2968424297691705000::1775380947::0::1::::<><><>0<>0<><>::uid://dlunqitvx8qw1::::res://scripts/lantern.gd
 light_particles.tscn::PackedScene::8033563103468446038::1775380947::0::1::::<><><>0<>0<><>::
 pause_menu.tscn::PackedScene::3682652178097069289::1775380947::0::1::::<><><>0<>0<><>::res://scripts/pause_menu.gd
-player.tscn::PackedScene::8384268425378160702::1775380947::0::1::::<><><>0<>0<><>::uid://bc3d30ugd1x1a::::res://scripts/player.gd<>uid://bij6rq0ssbq7a::::res://scenes/lantern.tscn<>uid://daobg7jpqgj57::::res://scripts/ray_cast_3d.gd<>uid://dmpru034idook::::res://scenes/light_particles.tscn
-room.tscn::PackedScene::290271421366393848::1775384964::0::1::::<><><>0<>0<><>::uid://sw020hte0rs6::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Rock_Medium_1.gltf<>uid://dnlj4dq7x1uc1::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Rock_Medium_2.gltf<>uid://2o2nd63kreyc::::res://resources/new_texture_set_resource.tres<>uid://bflutw46p0jt7::::res://assets/Material-LIB/Nature/Moss/Moss-B.png<>uid://dq6l2cq2hi1so::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Rock_Medium_3.gltf<>uid://dcncibm2i0uf3::::res://assets/Material-LIB/Nature/Moss/Moss_M.png<>uid://k64f20k5uq66::::res://assets/Material-LIB/Nature/Moss/Moss_N.png<>uid://4s660atip7ul::::res://assets/Material-LIB/Nature/Moss/Moss-R.png<>uid://6um7xdgoefob::::res://assets/Material-LIB/Nature/FoliageGrass/FoliageGrass-B.png<>uid://c2op2leeequ8c::::res://scenes/Node3D/Color_0_0.res<>uid://n2ovwo6u10v2::::res://assets/Material-LIB/Nature/FoliageGrass/FoliageGrass-M.png<>uid://gms77snmsh5w::::res://scenes/Node3D/Heightmap_0_0.res<>uid://du246qfrggfy0::::res://scenes/Node3D/Splatmap_0_0_0.res<>uid://bmkeqoj6jj4cn::::res://assets/Material-LIB/Nature/FoliageGrass/FoliageGrass-N.png<>uid://qjp87inkve0b::::res://assets/Material-LIB/Nature/FoliageGrass/FoliageGrass-R.png<>uid://drpnw8p4g7mve::::res://scenes/player.tscn
-test_level.tscn::PackedScene::3568758052933150243::1775383024::0::1::::<><><>0<>0<><>::uid://drpnw8p4g7mve::::res://scenes/player.tscn<>uid://bsp50jj5bcdft::::res://scenes/pause_menu.tscn<>uid://b88t3cpa5njrv::::res://scenes/test_mechanism.tscn
-test_mechanism.tscn::PackedScene::4771980742983420803::1775382356::0::1::::<><><>0<>0<><>::uid://cq8uffl0kefrf::::res://scripts/test_mechanism.gd<>uid://dmpru034idook::::res://scenes/light_particles.tscn
+player.tscn::PackedScene::8384268425378160702::1775417285::0::1::::<><><>0<>0<><>::uid://bc3d30ugd1x1a::::res://scripts/player.gd<>uid://bij6rq0ssbq7a::::res://scenes/lantern.tscn<>uid://daobg7jpqgj57::::res://scripts/ray_cast_3d.gd<>uid://df5k2jupasfq5::::res://assets/Skyboxes/PurplyBlueSky.png<>uid://dmpru034idook::::res://scenes/light_particles.tscn
+room.tscn::PackedScene::290271421366393848::1775416583::0::1::::<><><>0<>0<><>::uid://sw020hte0rs6::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Rock_Medium_1.gltf<>uid://dnlj4dq7x1uc1::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Rock_Medium_2.gltf<>uid://2o2nd63kreyc::::res://resources/new_texture_set_resource.tres<>uid://bflutw46p0jt7::::res://assets/Material-LIB/Nature/Moss/Moss-B.png<>uid://dq6l2cq2hi1so::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Rock_Medium_3.gltf<>uid://dcncibm2i0uf3::::res://assets/Material-LIB/Nature/Moss/Moss_M.png<>uid://k64f20k5uq66::::res://assets/Material-LIB/Nature/Moss/Moss_N.png<>uid://4s660atip7ul::::res://assets/Material-LIB/Nature/Moss/Moss-R.png<>uid://6um7xdgoefob::::res://assets/Material-LIB/Nature/FoliageGrass/FoliageGrass-B.png<>uid://c2op2leeequ8c::::res://scenes/Node3D/Color_0_0.res<>uid://n2ovwo6u10v2::::res://assets/Material-LIB/Nature/FoliageGrass/FoliageGrass-M.png<>uid://gms77snmsh5w::::res://scenes/Node3D/Heightmap_0_0.res<>uid://du246qfrggfy0::::res://scenes/Node3D/Splatmap_0_0_0.res<>uid://bmkeqoj6jj4cn::::res://assets/Material-LIB/Nature/FoliageGrass/FoliageGrass-N.png<>uid://qjp87inkve0b::::res://assets/Material-LIB/Nature/FoliageGrass/FoliageGrass-R.png<>uid://drpnw8p4g7mve::::res://scenes/player.tscn<>uid://bsp50jj5bcdft::::res://scenes/pause_menu.tscn
+test_level.tscn::PackedScene::3568758052933150243::1775416914::0::1::::<><><>0<>0<><>::uid://drpnw8p4g7mve::::res://scenes/player.tscn<>uid://bsp50jj5bcdft::::res://scenes/pause_menu.tscn<>uid://b88t3cpa5njrv::::res://scenes/test_mechanism.tscn
+test_mechanism.tscn::PackedScene::4771980742983420803::1775413027::0::1::::<><><>0<>0<><>::uid://cq8uffl0kefrf::::res://scripts/test_mechanism.gd<>uid://dmpru034idook::::res://scenes/light_particles.tscn
 ::res://scenes/Node3D/::1775380965
 Color_0_0.res::Image::6697800989620651892::1775380965::0::1::::<><><>0<>0<><>::
 Heightmap_0_0.res::Image::447057355312761886::1775380965::0::1::::<><><>0<>0<><>::
 Splatmap_0_0_0.res::Image::8620594124479131085::1775380965::0::1::::<><><>0<>0<><>::
-::res://scripts/::1775384964
+::res://scripts/::1775419096
+basic_level.gd::GDScript::7729658175023330894::1775419096::0::1::::<>Node3D<><>0<>0<><>::
+door.gd::GDScript::1696444410414548624::1775416914::0::1::::<>Node3D<><>0<>0<><>::
 global.gd::GDScript::5159769981223312024::1775380947::0::1::::<>Node<><>0<>0<><>::
 lantern.gd::GDScript::7973445230311578270::1775380947::0::1::::<>Node3D<><>0<>0<><>::
 pause_menu.gd::GDScript::5960934035727244648::1775380947::0::1::::<>CanvasLayer<><>0<>0<><>::
 player.gd::GDScript::2584834445547988880::1775380947::0::1::::<>CharacterBody3D<><>0<>0<><>::
-ray_cast_3d.gd::GDScript::7188236466745940240::1775380947::0::1::::<>RayCast3D<><>0<>0<><>::
-test_mechanism.gd::GDScript::5965210881062558459::1775384964::0::1::::<>Node3D<><>0<>0<><>::
+ray_cast_3d.gd::GDScript::7188236466745940240::1775413027::0::1::::<>RayCast3D<><>0<>0<><>::
+test_mechanism.gd::GDScript::5965210881062558459::1775413027::0::1::::<>Node3D<><>0<>0<><>::
