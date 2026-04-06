@@ -14,7 +14,7 @@ func _process(delta: float) -> void:
 
 
 func _on_area_3d_body_shape_entered(body_rid: RID, body: Node3D, body_shape_index: int, local_shape_index: int) -> void:
-	get_tree().change_scene_to_file("res://scenes/test_level.tscn")
+	get_tree().change_scene_to_file("res://node_2d.tscn")
 	#door_entered.emit()
 
 func collision_state():

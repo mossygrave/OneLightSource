@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://bycjnt3vemx2h" path="res://scenes/door.tscn" id="4_m4tfs"]
 [ext_resource type="Texture2D" uid="uid://epes24c13cht" path="res://assets/Material-LIB/BrickWall/BrickWall[Orange]-B.png" id="5_76oyq"]
 [ext_resource type="Texture2D" uid="uid://bflutw46p0jt7" path="res://assets/Material-LIB/Nature/Moss/Moss-B.png" id="6_7vxai"]
-[ext_resource type="PackedScene" uid="uid://c84d6oo7ui7bs" path="res://assets/Stylized Nature MegaKit[Standard]/glTF/TwistedTree_1.gltf" id="7_5ne5p"]
 [ext_resource type="PackedScene" uid="uid://bu6yqyyu3wffl" path="res://assets/Stylized Nature MegaKit[Standard]/glTF/Mushroom_Common.gltf" id="8_ke3rq"]
 [ext_resource type="PackedScene" uid="uid://cu821cmvviyub" path="res://assets/Stylized Nature MegaKit[Standard]/glTF/Grass_Wispy_Short.gltf" id="9_toqal"]
 [ext_resource type="PackedScene" uid="uid://cror50r38br5a" path="res://assets/Stylized Nature MegaKit[Standard]/glTF/Pebble_Round_5.gltf" id="10_o5goe"]
@@ -15,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://bvm1pe8y1av7p" path="res://assets/Stylized Nature MegaKit[Standard]/glTF/Pebble_Round_2.gltf" id="13_xqvh4"]
 [ext_resource type="PackedScene" uid="uid://bsp50jj5bcdft" path="res://scenes/pause_menu.tscn" id="14_4okik"]
 [ext_resource type="PackedScene" uid="uid://drpnw8p4g7mve" path="res://scenes/player.tscn" id="15_convg"]
+[ext_resource type="PackedScene" uid="uid://lk1sko3leovv" path="res://assets/Stylized Nature MegaKit[Standard]/glTF/CommonTree_5.gltf" id="15_scobm"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bp84b"]
 
@@ -176,25 +176,25 @@ use_collision = true
 size = Vector3(1, 1, 1.0472336)
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGBox3D6" unique_id=255073427]
-transform = Transform3D(0.45291382, 0, 0, 0, 1, 0, 0, 0, 0.52448416, -0.16110183, 0, 0.2849313)
+transform = Transform3D(0.45291382, 0, 0, 0, 1, 0, 0, 0, 0.5244842, -0.01537239, 0, 0.2849313)
 operation = 2
 radius = 0.12841797
 sides = 64
 
 [node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CSGBox3D6" unique_id=1955879482]
-transform = Transform3D(0.4829596, 0, 0, 0, 1, 0, 0, 0, 0.58717614, -0.16110183, 0.8372421, 0.2849313)
+transform = Transform3D(0.4829596, 0, 0, 0, 1, 0, 0, 0, 0.5871762, -0.01537239, 0.8372421, 0.2849313)
 radius = 0.12841797
 height = 0.6837158
 sides = 64
 material = SubResource("StandardMaterial3D_j0hv3")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="CSGBox3D6" unique_id=2032050201]
-transform = Transform3D(0.065680936, -0.062081233, -0.9959076, 0.99784064, 0.004086452, 0.06555369, 7.497147e-08, -0.99806273, 0.062215585, -0.15010247, 0, 0.28421366)
+transform = Transform3D(0.2762356, 0.019235272, 0.69218427, 0.21617694, 0.017526394, 0.63069093, 2.6314966e-08, -0.031244976, 0.0008682635, -0.0043730256, 0, 0.28421366)
 light_energy = 3.479
 spot_range = 23.182674
 spot_angle = 38.66305
 
-[node name="TwistedTree_12" parent="." unique_id=955141741 instance=ExtResource("7_5ne5p")]
+[node name="TwistedTree_12" parent="." unique_id=955141741]
 transform = Transform3D(-0.59835714, 0, 0.044371065, 0, 0.6, 0, -0.044371065, 0, -0.59835714, -0.06036681, 0.6058732, 33.118137)
 
 [node name="Mushroom_Common2" parent="." unique_id=1217143209 instance=ExtResource("8_ke3rq")]
@@ -204,13 +204,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.85172606, 0.51747084, 32.82
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.83184826, 0.5857501, 33.45751)
 
 [node name="Pebble_Round_52" parent="." unique_id=1577146931 instance=ExtResource("10_o5goe")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.029070899, 0.5247976, 32.43385)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11348404, 0.5247976, 32.483204)
 
 [node name="Pebble_Round_32" parent="." unique_id=924585491 instance=ExtResource("11_rax47")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2683484, 0.5017529, 32.296673)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41090333, 0.5017529, 32.346027)
 
 [node name="Pebble_Round_42" parent="." unique_id=639831534 instance=ExtResource("12_ap83g")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.001491509, 0.50563186, 32.068813)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12181904, 0.50563186, 32.137497)
 
 [node name="Pebble_Round_22" parent="." unique_id=1536029174 instance=ExtResource("13_xqvh4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.40223563, 0.50298023, 32.187965)
@@ -311,6 +311,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.23038483, 3.3339844, -14.83
 use_collision = true
 size = Vector3(10.498169, 7.6679688, 2.716507)
 material = SubResource("StandardMaterial3D_syp4h")
+
+[node name="CommonTree_52" parent="." unique_id=1413104250 instance=ExtResource("15_scobm")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -0.34395012, 0.742772, 33.256626)
 
 [connection signal="tower_lit" from="TestMechanism" to="." method="_on_test_mechanism_tower_lit2"]
 [connection signal="tower_lit" from="TestMechanism2" to="." method="_on_test_mechanism_2_tower_lit3"]

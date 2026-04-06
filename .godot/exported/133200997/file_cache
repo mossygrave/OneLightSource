@@ -1,0 +1,16 @@
+res://addons/terrabrush/Resources/Shaders/heightmap_shader.tres::e984f61b8c07f6a04f243fb3ea1d63dd::1775380965::res://.godot/exported/133200997/export-03a451bda36584e758f9aeea4dd4ac68-heightmap_shader.res
+res://addons/terrabrush/Resources/DefaultNoise.tres::ceecc4e840c07d80a325d0d3fb0c94a7::1775380965::res://.godot/exported/133200997/export-817a1fffa625446001f7f9c6026a4b03-DefaultNoise.res
+res://resources/new_texture_set_resource.tres::fbb5d953a1cfe36613f53fa43a07d712::1775380965::res://.godot/exported/133200997/export-7590ce7847d5259bd6c464f26b4acdbf-new_texture_set_resource.res
+res://scenes/anim_door.tscn::e53b0545dec3bf701dd0fb70a7c93c5a::1775439908::res://.godot/exported/133200997/export-d13f8ef9690e680853cd8831d1c7df56-anim_door.scn
+res://scenes/basic_level.tscn::5bfe039aafc6e992481e3ae448c24e0a::1775431605::res://.godot/exported/133200997/export-bb18512a593f28965424aef41ae0d899-basic_level.scn
+res://scenes/door.tscn::7f8cc8c76cc91199aa8ffd86550b63e7::1775439914::res://.godot/exported/133200997/export-3370694a3d56567dea5c3bf0058a536d-door.scn
+res://scenes/ethan_level.tscn::90304664bd0271431b8e60d00e0d7acb::1775440379::res://.godot/exported/133200997/export-43d77f47c0c0a354c512e422c1dc04f8-ethan_level.scn
+res://scenes/ethan_level_2.tscn::7a11147a18b4a6beed6af1de5cff7102::1775439908::res://.godot/exported/133200997/export-5b043ad2dad21b27f7171f2aaeb874ab-ethan_level_2.scn
+res://scenes/lantern.tscn::c8e07931eb074e81f5d954c5bddac705::1775380947::res://.godot/exported/133200997/export-805d11e3efdc4cb8f935ee58e145442e-lantern.scn
+res://scenes/light_particles.tscn::8862c7d9a25207ee4188d4a0d015f0f0::1775380947::res://.godot/exported/133200997/export-1bba383495374bc3b6513131c74e5b8d-light_particles.scn
+res://scenes/morgan_level.tscn::40921567b4adafc7504018355ecafb76::1775443084::res://.godot/exported/133200997/export-a3d9cd274194435c53c0652c917a78c5-morgan_level.scn
+res://scenes/pause_menu.tscn::a3821fbafc9c6e82dc0e264c55d28646::1775380947::res://.godot/exported/133200997/export-ca2c2284eb591e72162d67219a0d2f87-pause_menu.scn
+res://scenes/player.tscn::426ec1ebdfa0b41a6a17e3648bb51bda::1775439908::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
+res://scenes/test_level.tscn::14ac1497c49144ee7972622cf9eaf420::1775416914::res://.godot/exported/133200997/export-7416c34946b4d969d354a1f25ed3ee62-test_level.scn
+res://scenes/test_mechanism.tscn::92f452b4a1af4f247ef286b3e424eb23::1775439908::res://.godot/exported/133200997/export-04af120fc9af4a09ae2a7630cc208c49-test_mechanism.scn
+res://node_2d.tscn::b223d3593715f6a8aa46b26e6ff41e7c::1775440708::res://.godot/exported/133200997/export-362256a061aa8890e9a1e558b11e5ec3-node_2d.scn

@@ -52,3 +52,7 @@ func _on_pick_up_area_body_entered(_body: CharacterBody3D) -> void:
 func _on_pick_up_area_body_exited(_body: CharacterBody3D) -> void:
 	is_in_area = false
 	$Lantern/PickUpLantern/PickUpPrompt.hide()
+
+
+func _on_area_3d_body_entered(body: Node3D) -> void:
+	get_tree().change_scene_to_file("res://scenes/morgan_level.tscn")

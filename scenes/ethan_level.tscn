@@ -14,6 +14,9 @@ emission_enabled = true
 emission = Color(0.6666667, 0.78431374, 0.9019608, 1)
 emission_energy_multiplier = 3.2
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_qgq63"]
+size = Vector3(1, 2.0825195, 4.9368896)
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_toh6s"]
 lightmap_size_hint = Vector2i(12, 12)
 add_uv2 = true
@@ -98,6 +101,14 @@ material = SubResource("StandardMaterial3D_qgq63")
 light_color = Color(0.6156863, 0.827451, 1, 1)
 shadow_enabled = true
 
+[node name="Area3D" type="Area3D" parent="Level/Finish" unique_id=1755619782]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6927004, 0, 0)
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/Finish/Area3D" unique_id=2024558825]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07645893, -0.9177358)
+shape = SubResource("BoxShape3D_qgq63")
+
 [node name="LightPath" type="Node3D" parent="." unique_id=1662167870]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.060094357, 0)
 visible = false
@@ -166,5 +177,6 @@ horizontal_alignment = 1
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 6)
 
 [connection signal="tower_lit" from="TestMechanism" to="." method="_on_test_mechanism_tower_lit"]
+[connection signal="body_entered" from="Level/Finish/Area3D" to="." method="_on_area_3d_body_entered"]
 [connection signal="body_entered" from="Lantern/PickUpLantern/Pick Up Area" to="." method="_on_pick_up_area_body_entered"]
 [connection signal="body_exited" from="Lantern/PickUpLantern/Pick Up Area" to="." method="_on_pick_up_area_body_exited"]
