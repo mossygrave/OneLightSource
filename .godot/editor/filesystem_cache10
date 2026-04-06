@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1775432646
+::res://::1775439783
 icon.svg::CompressedTexture2D::3244085221598579901::1775331428::1775432128::1::::<><><>0<>0<>d0b6d532f8cb223fa940ab57523967ef<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://addons/::1775380964
 ::res://addons/terrabrush/::1775380965
@@ -120,7 +120,7 @@ blend_util.gdshaderinc::ShaderInclude::3590888764745595264::1775331424::0::1::::
 blender_assets.cats.txt::TextFile::-1::1775331427::0::1::::<><><>0<>0<><>::
 ::res://assets/Material-LIB/BaseColor/::1775331424
 BaseColor.png::CompressedTexture2D::5837287931990962199::1775331424::1775331424::1::::<><><>0<>0<>a7199a2d91d9b153d2948ca278cceae5<>res://.godot/imported/BaseColor.png-b6a887b5d4d6e448849f8b0bccb776fa.ctex::
-::res://assets/Material-LIB/BrickWall/::1775331424
+::res://assets/Material-LIB/BrickWall/::1775434275
 BrickWall-M.png::CompressedTexture2D::8015292846944951380::1775331424::1775331424::1::::<><><>0<>0<>2d638cffebd4cc70639b9335ef262623<>res://.godot/imported/BrickWall-M.png-f4933d59ef75f508d1e19336fa8ffe98.ctex::
 BrickWall-N.png::CompressedTexture2D::6244348172088524974::1775331424::1775331424::1::::<><><>0<>0<>04a1428973e12c6eba8fc4ad69502763<>res://.godot/imported/BrickWall-N.png-845460f70778480b21490dd4d86547d3.ctex::
 BrickWall-R.png::CompressedTexture2D::318037357994724922::1775331424::1775331424::1::::<><><>0<>0<>da3de51e5f578523a7e9fef42eebe363<>res://.godot/imported/BrickWall-R.png-e2e422a0c52c8a255da92e92d023c918.ctex::
@@ -213,7 +213,7 @@ FoliageGrass-B.png::CompressedTexture2D::2217928670141304945::1775331426::177538
 FoliageGrass-M.png::CompressedTexture2D::969081884802009657::1775331426::1775381895::1::::<><><>0<>0<>eafc835c0906468cd87d574c71652b20<>res://.godot/imported/FoliageGrass-M.png-869c0b68e1ce4f8881353df551d28f69.ctex::
 FoliageGrass-N.png::CompressedTexture2D::3249602776214685885::1775331426::1775381897::1::::<><><>0<>0<>0771947e763ee965d57f0bf2e435b0d3<>res://.godot/imported/FoliageGrass-N.png-9e00a5c061f95f9716f4dc6cccb62ea0.ctex::
 FoliageGrass-R.png::CompressedTexture2D::1142572277795909323::1775331426::1775381895::1::::<><><>0<>0<>92838ead5e2ac3c2e4febd5f17b87e60<>res://.godot/imported/FoliageGrass-R.png-e169079b06e10d8170f12421194ba44f.ctex::
-::res://assets/Material-LIB/Nature/Moss/::1775381896
+::res://assets/Material-LIB/Nature/Moss/::1775434736
 Moss-B.png::CompressedTexture2D::2761322528860010914::1775331426::1775434736::1::::<><><>0<>0<>d67ed66de38e8e8c0d8bd13aacf7ccd4<>res://.godot/imported/Moss-B.png-68bc7269464e1923b07ed17d285ee205.s3tc.ctex::
 Moss-R.png::CompressedTexture2D::2074574165421171851::1775331426::1775381895::1::::<><><>0<>0<>436aad70b6c5b2c22c27f9dd9d23cdd0<>res://.godot/imported/Moss-R.png-19462139dbea55ba7877150de0d0b3c8.ctex::
 Moss_M.png::CompressedTexture2D::7326612441794373310::1775331426::1775381894::1::::<><><>0<>0<>37d8718491f1aacccb87f0a7e163b65f<>res://.godot/imported/Moss_M.png-c5d031e265a85cf14bb34d8722c891aa.ctex::
@@ -418,16 +418,16 @@ Rocks_Desert_Diffuse.png::CompressedTexture2D::6745829127449237190::1775331428::
 Rocks_Diffuse.png::CompressedTexture2D::457232826307033135::1775331428::1775331428::1::::<><><>0<>0<>0de0accfa4fade1f25c0d361f78424ee<>res://.godot/imported/Rocks_Diffuse.png-39416e10b14e47e3e3345fc0f6e90c81.ctex::
 ::res://resources/::1775380965
 new_texture_set_resource.tres::TextureSetResource::1925662847654385578::1775380965::0::1::::<><><>0<>0<><>::uid://bk1hvwvttgif1::::res://assets/Material-LIB/Nature/FoliageForest/FoliageForest-B.png<>uid://bjrnpcyemuy7q::::res://assets/Material-LIB/Nature/FoliageForest/FoliageForest-M.png<>uid://c22oto4cag2ak::::res://assets/Material-LIB/Nature/FoliageForest/FoliageForest-N.png<>uid://b0l5lyy7nyl4r::::res://assets/Material-LIB/Nature/FoliageForest/FoliageForest-R.png
-::res://scenes/::1775433563
+::res://scenes/::1775439730
 anim_door.tscn::PackedScene::4001006284561750752::1775431605::0::1::::<><><>0<>0<><>::
 basic_level.tscn::PackedScene::3274255867748821105::1775431605::0::1::::<><><>0<>0<><>::uid://dieklt82kpc11::::res://scripts/basic_level.gd<>uid://drpnw8p4g7mve::::res://scenes/player.tscn<>uid://b88t3cpa5njrv::::res://scenes/test_mechanism.tscn<>uid://bsp50jj5bcdft::::res://scenes/pause_menu.tscn<>uid://bycjnt3vemx2h::::res://scenes/door.tscn
-door.tscn::PackedScene::4075652396927824441::1775433563::0::1::::<><><>0<>0<><>::uid://yf1grqdeqj7m::::res://scripts/door.gd
+door.tscn::PackedScene::4075652396927824441::1775439343::0::1::::<><><>0<>0<><>::uid://yf1grqdeqj7m::::res://scripts/door.gd
 ethan_level.tscn::PackedScene::3249365552354979523::1775431605::0::1::::<><><>0<>0<><>::uid://ckw7qgwdguau7::::res://scripts/ethan_level.gd<>uid://b88t3cpa5njrv::::res://scenes/test_mechanism.tscn<>uid://bsp50jj5bcdft::::res://scenes/pause_menu.tscn<>uid://drpnw8p4g7mve::::res://scenes/player.tscn<>uid://bxad8vh1xr5k3::::res://scenes/anim_door.tscn
 lantern.tscn::PackedScene::2968424297691705000::1775380947::0::1::::<><><>0<>0<><>::uid://dlunqitvx8qw1::::res://scripts/lantern.gd
 light_particles.tscn::PackedScene::8033563103468446038::1775380947::0::1::::<><><>0<>0<><>::
+morgan_level.tscn::PackedScene::6455307705726235934::1775439730::0::1::::<><><>0<>0<><>::uid://img701b75igi::::res://scripts/morgan_level.gd<>uid://bxad8vh1xr5k3::::res://scenes/anim_door.tscn<>uid://b88t3cpa5njrv::::res://scenes/test_mechanism.tscn<>uid://bycjnt3vemx2h::::res://scenes/door.tscn<>uid://epes24c13cht::::res://assets/Material-LIB/BrickWall/BrickWall[Orange]-B.png<>uid://bflutw46p0jt7::::res://assets/Material-LIB/Nature/Moss/Moss-B.png<>uid://c84d6oo7ui7bs::::res://assets/Stylized Nature MegaKit[Standard]/glTF/TwistedTree_1.gltf<>uid://bu6yqyyu3wffl::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Mushroom_Common.gltf<>uid://cu821cmvviyub::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Grass_Wispy_Short.gltf<>uid://cror50r38br5a::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Pebble_Round_5.gltf<>uid://d4jt37kmld5lp::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Pebble_Round_3.gltf<>uid://c202cci7b8x25::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Pebble_Round_4.gltf<>uid://bvm1pe8y1av7p::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Pebble_Round_2.gltf<>uid://bsp50jj5bcdft::::res://scenes/pause_menu.tscn<>uid://drpnw8p4g7mve::::res://scenes/player.tscn
 pause_menu.tscn::PackedScene::3682652178097069289::1775380947::0::1::::<><><>0<>0<><>::res://scripts/pause_menu.gd
 player.tscn::PackedScene::8384268425378160702::1775423598::0::1::::<><><>0<>0<><>::uid://bc3d30ugd1x1a::::res://scripts/player.gd<>uid://bij6rq0ssbq7a::::res://scenes/lantern.tscn<>uid://daobg7jpqgj57::::res://scripts/ray_cast_3d.gd<>uid://df5k2jupasfq5::::res://assets/Skyboxes/PurplyBlueSky.png<>uid://dmpru034idook::::res://scenes/light_particles.tscn
-morgan_level.tscn::PackedScene::6455307705726235934::1775433308::0::1::::<><><>0<>0<><>::uid://bmkatt0r8lb8v::::res://scenes/ethan_level.tscn<>uid://bxad8vh1xr5k3::::res://scenes/anim_door.tscn
 room.tscn::PackedScene::290271421366393848::1775423598::0::1::::<><><>0<>0<><>::uid://sw020hte0rs6::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Rock_Medium_1.gltf<>uid://dnlj4dq7x1uc1::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Rock_Medium_2.gltf<>uid://2o2nd63kreyc::::res://resources/new_texture_set_resource.tres<>uid://bflutw46p0jt7::::res://assets/Material-LIB/Nature/Moss/Moss-B.png<>uid://dq6l2cq2hi1so::::res://assets/Stylized Nature MegaKit[Standard]/glTF/Rock_Medium_3.gltf<>uid://dcncibm2i0uf3::::res://assets/Material-LIB/Nature/Moss/Moss_M.png<>uid://k64f20k5uq66::::res://assets/Material-LIB/Nature/Moss/Moss_N.png<>uid://4s660atip7ul::::res://assets/Material-LIB/Nature/Moss/Moss-R.png<>uid://6um7xdgoefob::::res://assets/Material-LIB/Nature/FoliageGrass/FoliageGrass-B.png<>uid://c2op2leeequ8c::::res://scenes/Node3D/Color_0_0.res<>uid://n2ovwo6u10v2::::res://assets/Material-LIB/Nature/FoliageGrass/FoliageGrass-M.png<>uid://gms77snmsh5w::::res://scenes/Node3D/Heightmap_0_0.res<>uid://du246qfrggfy0::::res://scenes/Node3D/Splatmap_0_0_0.res<>uid://bmkeqoj6jj4cn::::res://assets/Material-LIB/Nature/FoliageGrass/FoliageGrass-N.png<>uid://qjp87inkve0b::::res://assets/Material-LIB/Nature/FoliageGrass/FoliageGrass-R.png<>uid://drpnw8p4g7mve::::res://scenes/player.tscn<>uid://bsp50jj5bcdft::::res://scenes/pause_menu.tscn
 test_level.gd::GDScript::3720766028827242891::1775423587::0::1::::<>Node3D<><>0<>0<><>::
 test_level.tscn::PackedScene::3568758052933150243::1775416914::0::1::::<><><>0<>0<><>::uid://drpnw8p4g7mve::::res://scenes/player.tscn<>uid://bsp50jj5bcdft::::res://scenes/pause_menu.tscn<>uid://b88t3cpa5njrv::::res://scenes/test_mechanism.tscn
@@ -436,15 +436,15 @@ test_mechanism.tscn::PackedScene::4771980742983420803::1775431516::0::1::::<><><
 Color_0_0.res::Image::6697800989620651892::1775380965::0::1::::<><><>0<>0<><>::
 Heightmap_0_0.res::Image::447057355312761886::1775380965::0::1::::<><><>0<>0<><>::
 Splatmap_0_0_0.res::Image::8620594124479131085::1775380965::0::1::::<><><>0<>0<><>::
-::res://scripts/::1775433389
+::res://scripts/::1775439459
 anim_door.gd::GDScript::3578202476694196186::1775431605::0::1::::<>Node3D<><>0<>0<><>::
 basic_level.gd::GDScript::7729658175023330894::1775423598::0::1::::<>Node3D<><>0<>0<><>::
 door.gd::GDScript::1696444410414548624::1775423598::0::1::::<>Node3D<><>0<>0<><>::
 ethan_level.gd::GDScript::5522117980097755304::1775431605::0::1::::<>Node3D<><>0<>0<><>::
 global.gd::GDScript::5159769981223312024::1775431605::0::1::::<>Node<><>0<>0<><>::
 lantern.gd::GDScript::7973445230311578270::1775423587::0::1::::<>Node3D<><>0<>0<><>::
+morgan_level.gd::GDScript::586706082852587012::1775439459::0::1::::<>Node3D<><>0<>0<><>::
 pause_menu.gd::GDScript::5960934035727244648::1775380947::0::1::::<>CanvasLayer<><>0<>0<><>::
 player.gd::GDScript::2584834445547988880::1775423587::0::1::::<>CharacterBody3D<><>0<>0<><>::
 ray_cast_3d.gd::GDScript::7188236466745940240::1775413027::0::1::::<>RayCast3D<><>0<>0<><>::
-morgan_level.gd::GDScript::586706082852587012::1775433389::0::1::::<>Node3D<><>0<>0<><>::
 test_mechanism.gd::GDScript::5965210881062558459::1775423587::0::1::::<>Node3D<><>0<>0<><>::

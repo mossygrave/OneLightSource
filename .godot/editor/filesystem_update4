@@ -1,3 +1,2 @@
 res://scenes/morgan_level.tscn
-res://scenes/door.tscn
-res://scripts/morgan_level.gd
+res://scripts/door.gd
