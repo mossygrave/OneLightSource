@@ -5,6 +5,14 @@
 [ext_resource type="PackedScene" uid="uid://bsp50jj5bcdft" path="res://scenes/pause_menu.tscn" id="3_qgq63"]
 [ext_resource type="PackedScene" uid="uid://drpnw8p4g7mve" path="res://scenes/player.tscn" id="4_bb1xa"]
 [ext_resource type="PackedScene" uid="uid://bxad8vh1xr5k3" path="res://scenes/anim_door.tscn" id="5_4extp"]
+[ext_resource type="PackedScene" uid="uid://bij6rq0ssbq7a" path="res://scenes/lantern.tscn" id="6_odi8d"]
+[ext_resource type="PackedScene" uid="uid://dmpru034idook" path="res://scenes/light_particles.tscn" id="7_qgq63"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qgq63"]
+vertex_color_use_as_albedo = true
+emission_enabled = true
+emission = Color(0.6666667, 0.78431374, 0.9019608, 1)
+emission_energy_multiplier = 3.2
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_toh6s"]
 lightmap_size_hint = Vector2i(12, 12)
@@ -17,22 +25,81 @@ emission_energy_multiplier = 7.15
 backlight_enabled = true
 backlight = Color(0.4392157, 0.6156863, 0.99607843, 1)
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_qgq63"]
+radius = 1.0783037
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_bb1xa"]
+radius = 3.845813
+
 [node name="EthanLevel" type="Node3D" unique_id=1040062394]
 script = ExtResource("1_4extp")
 
 [node name="Player" parent="." unique_id=719765561 instance=ExtResource("4_bb1xa")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7784626, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7784626, 19.10493)
 
 [node name="TestMechanism" parent="." unique_id=652347845 instance=ExtResource("2_odi8d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8241128, -11.259761)
 
 [node name="PauseMenu" parent="." unique_id=1978903460 instance=ExtResource("3_qgq63")]
 
-[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=702951215]
-transform = Transform3D(40.88969, 0, 0, 0, 1, 0, 0, 0, 43.326855, 0, 0, 0)
+[node name="Level" type="Node3D" parent="." unique_id=59653137]
+
+[node name="Floor" type="CSGBox3D" parent="Level" unique_id=702951215]
+transform = Transform3D(40.88969, 0, 0, 0, 1, 0, 0, 0, 43.326855, -0.035326004, 0.033499718, 4.8755956)
 use_collision = true
+size = Vector3(0.23144531, 1, 0.7739258)
+
+[node name="Ceiling" type="CSGBox3D" parent="Level" unique_id=1259848061]
+transform = Transform3D(40.88969, 0, 0, 0, 1, 0, 0, 0, 43.326855, -0.035326004, 6.5334997, 4.8755956)
+use_collision = true
+size = Vector3(0.23144531, 1, 0.7739258)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Level" unique_id=157687580]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.035326, 3.4567385, 4.478053)
+use_collision = true
+size = Vector3(1, 6, 34)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level/CSGBox3D6" unique_id=1442740095]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.09113884, -1.4709597, -8.452524)
+operation = 2
+size = Vector3(2.9228516, 2.9715576, 1.2529297)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Level" unique_id=187684620]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.964674, 3.4567385, 4.728053)
+use_collision = true
+size = Vector3(1, 6, 33.5)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Level" unique_id=1219233435]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.035326004, 3.4567385, -12.125369)
+use_collision = true
+size = Vector3(1, 6, 10.856445)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Level" unique_id=1635445847]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.035326004, 3.4567385, 20.978054)
+use_collision = true
+size = Vector3(1, 6, 10.410156)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Level" unique_id=1580566116]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 5.5)
+use_collision = true
+size = Vector3(10, 6, 1)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Level/CSGBox3D" unique_id=1743533371]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, 0)
+operation = 2
+size = Vector3(3, 3, 1)
+
+[node name="Finish" type="CSGBox3D" parent="Level" unique_id=296435700]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.893689, 2.1509058, -3.8933666)
+size = Vector3(1, 3.834961, 3.944336)
+material = SubResource("StandardMaterial3D_qgq63")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Level/Finish" unique_id=1979249115]
+light_color = Color(0.6156863, 0.827451, 1, 1)
+shadow_enabled = true
 
 [node name="LightPath" type="Node3D" parent="." unique_id=1662167870]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.060094357, 0)
 visible = false
 
 [node name="LightmapGI" type="LightmapGI" parent="LightPath" unique_id=879030203]
@@ -44,11 +111,60 @@ mesh = SubResource("PlaneMesh_toh6s")
 surface_material_override/0 = SubResource("StandardMaterial3D_odilc")
 
 [node name="Beam2" type="MeshInstance3D" parent="LightPath" unique_id=1788412101]
-transform = Transform3D(-2.3743332e-09, 0, 2.1534617, 0, 0.787, 0, -0.05431841, 0, -9.413079e-08, -2.102367, 0.5096414, -3.972742)
+transform = Transform3D(-2.3743332e-09, 0, 3.2301927, 0, 0.787, 0, -0.05431841, 0, -1.4119618e-07, -3.1835291, 0.5096414, -3.972742)
 mesh = SubResource("PlaneMesh_toh6s")
 surface_material_override/0 = SubResource("StandardMaterial3D_odilc")
 
 [node name="anim_door" parent="." unique_id=58532252 instance=ExtResource("5_4extp")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.358374, 2, -3.9731193)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.421487, 2, -3.9731193)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=786082705]
+transform = Transform3D(1, 0, 0, 0, 0.9544853, 0.29825795, 0, -0.29825795, 0.9544853, 0, 21.18058, 0)
+light_color = Color(0.014643638, 0, 0.27226055, 1)
+sky_mode = 1
+
+[node name="Lantern" parent="." unique_id=1778433501 instance=ExtResource("6_odi8d")]
+transform = Transform3D(0.4330127, -0.24999997, 0, 0.24999997, 0.4330127, 0, 0, 0, 0.5, -0.020799637, 1.7108169, 10.884567)
+
+[node name="LightParticles" parent="Lantern" unique_id=357665813 instance=ExtResource("7_qgq63")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.028490543, 0.28785014, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Lantern" unique_id=1275560983]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lantern/StaticBody3D" unique_id=172704970]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.044807434, 0.38641596, 0)
+shape = SubResource("SphereShape3D_qgq63")
+
+[node name="PickUpLantern" type="Node3D" parent="Lantern" unique_id=318449410]
+
+[node name="Pick Up Area" type="Area3D" parent="Lantern/PickUpLantern" unique_id=1430643883]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lantern/PickUpLantern/Pick Up Area" unique_id=1187009623]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05616474, 0.032426834, 0)
+shape = SubResource("SphereShape3D_bb1xa")
+
+[node name="PickUpPrompt" type="Label" parent="Lantern/PickUpLantern" unique_id=846578784]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -543.0
+offset_top = 208.0
+offset_right = 543.0
+offset_bottom = 318.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 80
+text = "Left Mouse to Pick Up Lantern"
+horizontal_alignment = 1
+
+[node name="anim_door2" parent="." unique_id=165704967 instance=ExtResource("5_4extp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 6)
 
 [connection signal="tower_lit" from="TestMechanism" to="." method="_on_test_mechanism_tower_lit"]
+[connection signal="body_entered" from="Lantern/PickUpLantern/Pick Up Area" to="." method="_on_pick_up_area_body_entered"]
+[connection signal="body_exited" from="Lantern/PickUpLantern/Pick Up Area" to="." method="_on_pick_up_area_body_exited"]

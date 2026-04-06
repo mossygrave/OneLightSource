@@ -93,7 +93,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_vbf3o")
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.0044113398, 1.9552205, 0.0021108687)
 light_color = Color(0.14509805, 0.4509804, 0.9764706, 1)
 light_energy = 2.109
-omni_range = 2.800261
+omni_range = 4.4375525
 omni_attenuation = -0.481
 
 [node name="LightParticles" parent="MechanismLight" unique_id=357665813 instance=ExtResource("2_gql57")]
@@ -142,6 +142,25 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 80
 text = "Press Left Mouse to Give Light"
+horizontal_alignment = 1
+
+[node name="Prompt2" type="Label" parent="." unique_id=1065397585]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -316.5
+offset_top = 221.5
+offset_right = 316.5
+offset_bottom = 290.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 80
+text = "Press Right Mouse to Take Light"
 horizontal_alignment = 1
 
 [connection signal="body_entered" from="TriggerArea" to="." method="_on_trigger_area_body_entered"]

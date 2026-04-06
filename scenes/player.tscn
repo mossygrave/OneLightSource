@@ -48,6 +48,15 @@ shape = SubResource("CapsuleShape3D_fjrip")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.76500005, -0.13500004)
 shape = SubResource("SphereShape3D_fjrip")
 
+[node name="DimVision" type="OmniLight3D" parent="." unique_id=424379384]
+visible = false
+light_color = Color(0.627451, 0.7607843, 0.8862745, 1)
+light_energy = 0.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 2.7
+omni_attenuation = 2.0
+
 [node name="Head" type="Node3D" parent="." unique_id=1041123231]
 
 [node name="Camera3D" type="Camera3D" parent="Head" unique_id=712623344]
@@ -61,15 +70,6 @@ collide_with_areas = true
 collide_with_bodies = false
 script = ExtResource("2_qhqgy")
 
-[node name="DimVision" type="OmniLight3D" parent="Head" unique_id=424379384]
-visible = false
-light_color = Color(0.99607843, 0.9607843, 0.8862745, 1)
-light_energy = 0.2
-light_bake_mode = 1
-shadow_enabled = true
-omni_range = 2.7
-omni_attenuation = 2.0
-
 [node name="LanternLight" type="MeshInstance3D" parent="Head" unique_id=475384062]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.59451056, 0.37500402, -0.8269198)
 mesh = SubResource("SphereMesh_dqkch")
@@ -79,7 +79,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_qlg0r")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4646955, 0, 1.8529956)
 light_color = Color(0.3529412, 0.75686276, 1, 1)
 light_energy = 3.059
-omni_range = 4.123571
+omni_range = 8.427213
 
 [node name="BonusLight" type="OmniLight3D" parent="Head/LanternLight" unique_id=792698211]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.382983, 0.07651949, 3.299996)

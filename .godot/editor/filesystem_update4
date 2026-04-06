@@ -1,9 +1,3 @@
-res://scenes/test_mechanism.tscn
-res://scripts/test_mechanism.gd
+res://scenes/ethan_level_2.tscn
 res://scenes/ethan_level.tscn
-res://scripts/door.gd
-res://scripts/ethan_level.gd
-res://scenes/lantern.tscn
-res://scenes/anim_door.tscn
-res://scripts/global.gd
-res://scripts/anim_door.gd
+res://scripts/ethan_level_2.gd
